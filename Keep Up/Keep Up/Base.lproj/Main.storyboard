@@ -14,10 +14,10 @@
                     <view key="view" contentMode="scaleToFill" id="9sg-FT-ItC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="czX-iZ-LTZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Streaks" id="cc1-HS-ynq"/>
+                    <tabBarItem key="tabBarItem" title="Streaks" image="paperplane" catalog="system" id="cc1-HS-ynq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-n5-fPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,10 +30,10 @@
                     <view key="view" contentMode="scaleToFill" id="Vob-A0-CEo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Challenges" image="square.and.arrow.up" catalog="system" landscapeImage="challenges" id="qCt-U9-jsw"/>
+                    <tabBarItem key="tabBarItem" title="Challenges" image="square.and.arrow.up" catalog="system" id="qCt-U9-jsw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIV-Ya-dm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,10 +137,10 @@
     </scenes>
     <resources>
         <image name="awards" width="256" height="256"/>
-        <image name="challenges" width="256" height="256"/>
         <image name="friends" width="256" height="256"/>
         <image name="habits" width="256" height="256"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="trend" width="256" height="256"/>
     </resources>
