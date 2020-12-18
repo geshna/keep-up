@@ -16,7 +16,10 @@ target 'Keep Up' do
     # Pods for testing
   end
 
+pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
 end
