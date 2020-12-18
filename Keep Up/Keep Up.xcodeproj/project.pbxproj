@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DF96B3258D6844009F5D7F /* HabitPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF96B2258D6844009F5D7F /* HabitPage.swift */; };
+		197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC7F0258D5392004AAADA /* SummaryViewController.swift */; };
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
 		A0BFFCFBBAAFB16DE07DC1E3 /* Pods_Keep_UpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */; };
 		B4185964258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DF96B2258D6844009F5D7F /* HabitPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitPage.swift; sourceTree = "<group>"; };
+		197FC7F0258D5392004AAADA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_UpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BA587AC2403AE40F800F53 /* Pods-Keep Up-Keep UpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up-Keep UpUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up-Keep UpUITests/Pods-Keep Up-Keep UpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CBA04F81A57528C933BD5F /* Pods-Keep Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.release.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,9 +152,11 @@
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
 				D1F73010258D086C00974903 /* Main.storyboard */,
+				197FC7F0258D5392004AAADA /* SummaryViewController.swift */,
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
 				D1F73018258D087100974903 /* Info.plist */,
+				00DF96B2258D6844009F5D7F /* HabitPage.swift */,
 			);
 			path = "Keep Up";
 			sourceTree = "<group>";
@@ -417,6 +423,8 @@
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
+				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
+				00DF96B3258D6844009F5D7F /* HabitPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
