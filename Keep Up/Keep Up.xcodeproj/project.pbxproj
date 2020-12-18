@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
 		A0BFFCFBBAAFB16DE07DC1E3 /* Pods_Keep_UpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */; };
-		B4185964258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info (2).plist */; };
-		B4185965258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info (2).plist */; };
-		B4185966258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info (2).plist */; };
+		B4185964258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
+		B4185965258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
+		B4185966258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
 		D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300A258D086C00974903 /* AppDelegate.swift */; };
 		D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300C258D086C00974903 /* SceneDelegate.swift */; };
 		D1F7300F258D086C00974903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300E258D086C00974903 /* ViewController.swift */; };
@@ -46,7 +46,7 @@
 		41CBA04F81A57528C933BD5F /* Pods-Keep Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.release.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.release.xcconfig"; sourceTree = "<group>"; };
 		6E6743E9DFEAA68C4ADA02E1 /* Pods-Keep Up-Keep UpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up-Keep UpUITests.release.xcconfig"; path = "Target Support Files/Pods-Keep Up-Keep UpUITests/Pods-Keep Up-Keep UpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94C5CE5B8B7DF434DD921467 /* Pods-Keep UpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep UpTests.debug.xcconfig"; path = "Target Support Files/Pods-Keep UpTests/Pods-Keep UpTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B4185963258D2C1E00CBFA16 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B622841432ED3AD5269E2AE4 /* Pods-Keep Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.debug.xcconfig"; sourceTree = "<group>"; };
 		BDF1F65C1ACBF0EEB6283EE5 /* Pods-Keep UpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep UpTests.release.xcconfig"; path = "Target Support Files/Pods-Keep UpTests/Pods-Keep UpTests.release.xcconfig"; sourceTree = "<group>"; };
 		C61557761B38D51755E360DE /* Pods_Keep_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +143,7 @@
 		D1F73009258D086C00974903 /* Keep Up */ = {
 			isa = PBXGroup;
 			children = (
-				B4185963258D2C1E00CBFA16 /* GoogleService-Info (2).plist */,
+				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
@@ -281,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4185964258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */,
+				B4185964258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */,
 				D1F73017258D087100974903 /* LaunchScreen.storyboard in Resources */,
 				D1F73014258D087100974903 /* Assets.xcassets in Resources */,
 				D1F73012258D086C00974903 /* Main.storyboard in Resources */,
@@ -292,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4185965258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */,
+				B4185965258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4185966258D2C1E00CBFA16 /* GoogleService-Info (2).plist in Resources */,
+				B4185966258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
