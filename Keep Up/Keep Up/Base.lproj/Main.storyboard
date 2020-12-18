@@ -33,7 +33,7 @@
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Challenges" image="square.and.arrow.up" catalog="system" id="qCt-U9-jsw"/>
+                    <tabBarItem key="tabBarItem" title="Challenges" image="person.3" catalog="system" id="qCt-U9-jsw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIV-Ya-dm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +141,7 @@
         <image name="habits" width="256" height="256"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="paperplane" catalog="system" width="64" height="60"/>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="person.3" catalog="system" width="72" height="35"/>
         <image name="trend" width="256" height="256"/>
     </resources>
 </document>
