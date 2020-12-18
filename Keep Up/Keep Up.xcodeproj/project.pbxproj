@@ -21,6 +21,11 @@
 		D1F73022258D087200974903 /* Keep_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F73021258D087200974903 /* Keep_UpTests.swift */; };
 		D1F7302D258D087200974903 /* Keep_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7302C258D087200974903 /* Keep_UpUITests.swift */; };
 		E7E339DD2F805B357E988F8D /* Pods_Keep_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61557761B38D51755E360DE /* Pods_Keep_Up.framework */; };
+		F262DF1C258D5FAB00EEE05E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF1B258D5FAB00EEE05E /* InitialViewController.swift */; };
+		F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF20258D600900EEE05E /* SignUpViewController.swift */; };
+		F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF25258D602600EEE05E /* LoginViewController.swift */; };
+		F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF2F258D67CB00EEE05E /* Utilities.swift */; };
+		F262DF35258D67F400EEE05E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF34258D67F400EEE05E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		D1F73028258D087200974903 /* Keep UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keep UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F7302C258D087200974903 /* Keep_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keep_UpUITests.swift; sourceTree = "<group>"; };
 		D1F7302E258D087200974903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F262DF1B258D5FAB00EEE05E /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F262DF20258D600900EEE05E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F262DF25258D602600EEE05E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F262DF2F258D67CB00EEE05E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F262DF34258D67F400EEE05E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,8 @@
 		D1F73009258D086C00974903 /* Keep Up */ = {
 			isa = PBXGroup;
 			children = (
+				F262DF39258D682600EEE05E /* Helpers */,
+				F262DF2B258D606300EEE05E /* SigningUp */,
 				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
@@ -171,6 +183,25 @@
 				D1F7302E258D087200974903 /* Info.plist */,
 			);
 			path = "Keep UpUITests";
+			sourceTree = "<group>";
+		};
+		F262DF2B258D606300EEE05E /* SigningUp */ = {
+			isa = PBXGroup;
+			children = (
+				F262DF20258D600900EEE05E /* SignUpViewController.swift */,
+				F262DF25258D602600EEE05E /* LoginViewController.swift */,
+				F262DF1B258D5FAB00EEE05E /* InitialViewController.swift */,
+			);
+			path = SigningUp;
+			sourceTree = "<group>";
+		};
+		F262DF39258D682600EEE05E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F262DF2F258D67CB00EEE05E /* Utilities.swift */,
+				F262DF34258D67F400EEE05E /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,9 +445,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
+				F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */,
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
+				F262DF1C258D5FAB00EEE05E /* InitialViewController.swift in Sources */,
+				F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */,
+				F262DF35258D67F400EEE05E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
