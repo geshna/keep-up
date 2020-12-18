@@ -7,6 +7,7 @@ build/
 DerivedData/
 
 Keep Up/Keep Up.xcworkspace/contents.xcworkspacedata
+Keep Up/Pods/Pods.xcodeproj/xcuserdata
 
 ## Various settings
 *.pbxuser
