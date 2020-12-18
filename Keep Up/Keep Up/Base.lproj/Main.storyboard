@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="9sg-FT-ItC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="czX-iZ-LTZ"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Streaks" image="paperplane" catalog="system" id="cc1-HS-ynq"/>
                     <navigationItem key="navigationItem" id="dYf-L6-yeG"/>
@@ -32,8 +33,8 @@
                     <view key="view" contentMode="scaleToFill" id="Vob-A0-CEo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" image="person.3" catalog="system" id="qCt-U9-jsw"/>
                     <navigationItem key="navigationItem" id="urF-yo-KnY"/>
@@ -50,7 +51,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9w-gc-hC4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9w-gc-hC4">
                                 <rect key="frame" x="58" y="296" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580766677856" green="0.83232390880584717" blue="0.47906756401062012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +60,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-ux-y3p">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-ux-y3p">
                                 <rect key="frame" x="58" y="460" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,7 +72,7 @@
                                     <segue destination="9kZ-62-M7z" kind="show" id="Zed-mR-A7m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhz-Zh-K4O">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhz-Zh-K4O">
                                 <rect key="frame" x="58" y="128" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,7 +84,7 @@
                                     <segue destination="J5k-9V-t3A" kind="show" id="6xF-UH-6g2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riM-Nx-ydO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riM-Nx-ydO">
                                 <rect key="frame" x="58" y="624" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,8 +110,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99276965856552124" green="0.97001630067825317" blue="0.90752416849136353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="nMB-Xc-Zn2"/>
+                        <color key="backgroundColor" red="0.99276965856552124" green="0.97001630067825317" blue="0.90752416849136353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Summary" image="list.dash" catalog="system" id="ENB-84-hUy"/>
                     <navigationItem key="navigationItem" id="VjB-P3-uZO"/>
@@ -132,8 +133,8 @@
                     <view key="view" contentMode="scaleToFill" id="uTA-T9-UJC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="V3r-Af-UyT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="JWx-Ez-8td"/>
                 </viewController>
@@ -180,8 +181,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="aQg-Jo-oF5"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Awards" id="iAU-mr-I7k"/>
                 </viewController>
@@ -483,6 +484,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="awards" width="256" height="256"/>
+        <image name="friends" width="256" height="256"/>
+        <image name="habits" width="256" height="256"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="success" width="256" height="256"/>
+        <image name="trend" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
