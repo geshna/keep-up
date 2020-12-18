@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="czX-iZ-LTZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Streaks" image="bell.fill" catalog="system" id="cc1-HS-ynq"/>
+                    <tabBarItem key="tabBarItem" title="Streaks" id="cc1-HS-ynq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-n5-fPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Challenges" image="doc.on.doc.fill" catalog="system" id="qCt-U9-jsw"/>
+                    <tabBarItem key="tabBarItem" title="Challenges" image="square.and.arrow.up" catalog="system" landscapeImage="challenges" id="qCt-U9-jsw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIV-Ya-dm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
                                 <rect key="frame" x="58" y="296" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580766677856" green="0.83232390880584717" blue="0.47906756401062012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="37"/>
                                 <state key="normal" title="Trends">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -60,7 +60,7 @@
                                 <rect key="frame" x="58" y="460" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="37"/>
                                 <state key="normal" title="Awards">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -69,7 +69,7 @@
                                 <rect key="frame" x="58" y="128" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="37"/>
                                 <state key="normal" title="Habits">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -78,11 +78,27 @@
                                 <rect key="frame" x="58" y="624" width="298" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99247580769999999" green="0.83232390879999996" blue="0.479067564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="37"/>
                                 <state key="normal" title="Friends">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="habits" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-zN-VZe">
+                                <rect key="frame" x="274" y="149" width="72" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trend" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-DP-fXf">
+                                <rect key="frame" x="274" y="317" width="72" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="awards" translatesAutoresizingMaskIntoConstraints="NO" id="DQy-G5-C37">
+                                <rect key="frame" x="274" y="481" width="72" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="friends" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-kh-Mh8">
+                                <rect key="frame" x="274" y="645" width="72" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99276965856552124" green="0.97001630067825317" blue="0.90752416849136353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="nMB-Xc-Zn2"/>
@@ -120,8 +136,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="64" height="62"/>
-        <image name="doc.on.doc.fill" catalog="system" width="58" height="64"/>
+        <image name="awards" width="256" height="256"/>
+        <image name="challenges" width="256" height="256"/>
+        <image name="friends" width="256" height="256"/>
+        <image name="habits" width="256" height="256"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="trend" width="256" height="256"/>
     </resources>
 </document>
