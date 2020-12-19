@@ -8,6 +8,7 @@
 import UIKit
 
 class HabitTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var habitName: UILabel!
     @IBOutlet weak var daysOfWeek: UILabel!
     @IBOutlet weak var myStreak: UILabel!
