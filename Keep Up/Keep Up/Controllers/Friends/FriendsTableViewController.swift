@@ -24,6 +24,8 @@ class FriendsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        loadFriends()
     }
 
     // MARK: - Table view data source
@@ -42,10 +44,19 @@ class FriendsTableViewController: UITableViewController {
         
         if Auth.auth().currentUser != nil {
             let user = Auth.auth().currentUser
-            let uid = user?.uid
-            let userEmail = user?.email
+            //let uid = user?.uid
+            //let userEmail = user?.email
             
-            
+            let friendsRef = db.collection("users").document(MyVariables.docId).collection("friends")
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents{
+                            print("\(document.documentID) => \(document.data())")
+                        }
+                    }
+                }
             
             //let userDB = db.collection("users").whereField("email", isEqualTo: userEmail).limit(to: 1)
             //let userFriends = userDB.collection("friends")
