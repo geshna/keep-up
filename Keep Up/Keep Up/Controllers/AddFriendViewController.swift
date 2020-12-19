@@ -24,6 +24,10 @@ class AddFriendViewController: UIViewController {
     
     @IBAction func lookButtonPressed(_ sender: Any) {
         
+        var textEntered = emailTextField.text
+        
+        
+        
     }
     
     /*
