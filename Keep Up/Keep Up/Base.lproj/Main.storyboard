@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="1329" y="-2111"/>
         </scene>
-        <!--View Controller-->
+        <!--Habits View Controller-->
         <scene sceneID="AFw-MK-xXu">
             <objects>
-                <viewController id="J5k-9V-t3A" sceneMemberID="viewController">
+                <viewController id="J5k-9V-t3A" customClass="HabitsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTA-T9-UJC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
