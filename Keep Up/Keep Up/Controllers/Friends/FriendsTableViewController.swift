@@ -45,9 +45,9 @@ class FriendsTableViewController: UITableViewController {
         if Auth.auth().currentUser != nil {
             let user = Auth.auth().currentUser
             //let uid = user?.uid
-            //let userEmail = user?.email
+            let userEmail = user?.email
             
-            let friendsRef = db.collection("users").document(MyVariables.docId).collection("friends")
+            let friendsRef = db.collection("users").document(userEmail!).collection("friends")
                 .getDocuments() { (querySnapshot, err) in
                     if let err = err {
                         print("Error getting documents: \(err)")

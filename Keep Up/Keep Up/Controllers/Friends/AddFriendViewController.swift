@@ -24,7 +24,7 @@ class AddFriendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //print("DOC ID MY VARIABLES: \(MyVariables.docId)")
         // Do any additional setup after loading the view.
     }
     
@@ -40,7 +40,7 @@ class AddFriendViewController: UIViewController {
         
         if Auth.auth().currentUser != nil {
             let user = Auth.auth().currentUser
-            
+            let userEmail = user?.email
             var i = 0
            
             //finds friend based on user entered email
@@ -55,7 +55,7 @@ class AddFriendViewController: UIViewController {
                             //let friendDocRef = self.db.collection("users").document(MyVariables.docId).collection("friends").
                             
                             //creates document in current user's friend list for the friend that was entered
-                            let friendDocRef = self.db.collection("users").document(MyVariables.docId).collection("friends").document(emailEntered)
+                            let friendDocRef = self.db.collection("users").document(userEmail!).collection("friends").document(emailEntered)
                             friendDocRef.getDocument { (document, error) in
                                 if let document = document, document.exists {
                                     print("friend already exists")
@@ -69,8 +69,8 @@ class AddFriendViewController: UIViewController {
                            if i == 0 {
                                 //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())
                             print("added friend")
-                            self.db.collection("users").document(MyVariables.docId).collection("friends").document(emailEntered).setData(document.data())
-                            print("DOC ID MY VARIABLES: \(MyVariables.docId)")
+                            self.db.collection("users").document(userEmail!).collection("friends").document(emailEntered).setData(document.data())
+                            //print("DOC ID MY VARIABLES: \(MyVariables.docId)")
                            }
                             //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())
                             
