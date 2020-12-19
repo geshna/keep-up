@@ -1,13 +1,13 @@
 //
-//  HabitPage.swift
+//  DetailHabitViewController.swift
 //  Keep Up
 //
-//  Created by Lisa Tang on 12/18/20.
+//  Created by Lisa Tang on 12/19/20.
 //
 
 import UIKit
 
-class HabitPage: UIViewController {
+class DetailHabitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

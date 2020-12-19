@@ -81,9 +81,9 @@ class LoginViewController: UIViewController {
                 }else{
                     //transition to home screen
                     UserDefaults.standard.set(false, forKey: "check_name_2")
-                    let initialViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.initialViewController) as? InitialViewController
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
                     
-                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.rootViewController = homeViewController
                     self.view.window?.makeKeyAndVisible()
                     
                 }
