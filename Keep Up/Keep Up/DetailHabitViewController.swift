@@ -1,5 +1,5 @@
 //
-//  HabitViewController.swift
+//  DetailHabitViewController.swift
 //  Keep Up
 //
 //  Created by Lisa Tang on 12/19/20.
@@ -7,13 +7,8 @@
 
 import UIKit
 
+class DetailHabitViewController: UIViewController {
 
-class HabitViewController: UIViewController {
-    @IBOutlet weak var habitName: UILabel!
-    @IBOutlet weak var daysOfWeek: UILabel!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var streak: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
