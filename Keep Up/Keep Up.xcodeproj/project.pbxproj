@@ -14,6 +14,11 @@
 		B4185964258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
 		B4185965258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
 		B4185966258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
+		B422C715258D91340032664D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422C714258D91340032664D /* CalendarViewController.swift */; };
+		B422C718258DA0960032664D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422C716258DA0960032664D /* DateCell.swift */; };
+		B422C719258DA0960032664D /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B422C717258DA0960032664D /* DateCell.xib */; };
+		B422C71C258DA2800032664D /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422C71A258DA2800032664D /* DateHeader.swift */; };
+		B422C71D258DA2800032664D /*  DateHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B422C71B258DA2800032664D /*  DateHeader.xib */; };
 		D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300A258D086C00974903 /* AppDelegate.swift */; };
 		D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300C258D086C00974903 /* SceneDelegate.swift */; };
 		D1F7300F258D086C00974903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300E258D086C00974903 /* ViewController.swift */; };
@@ -56,6 +61,11 @@
 		6E6743E9DFEAA68C4ADA02E1 /* Pods-Keep Up-Keep UpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up-Keep UpUITests.release.xcconfig"; path = "Target Support Files/Pods-Keep Up-Keep UpUITests/Pods-Keep Up-Keep UpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94C5CE5B8B7DF434DD921467 /* Pods-Keep UpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep UpTests.debug.xcconfig"; path = "Target Support Files/Pods-Keep UpTests/Pods-Keep UpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B422C714258D91340032664D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B422C716258DA0960032664D /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		B422C717258DA0960032664D /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		B422C71A258DA2800032664D /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		B422C71B258DA2800032664D /*  DateHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = " DateHeader.xib"; sourceTree = "<group>"; };
 		B622841432ED3AD5269E2AE4 /* Pods-Keep Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.debug.xcconfig"; sourceTree = "<group>"; };
 		BDF1F65C1ACBF0EEB6283EE5 /* Pods-Keep UpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep UpTests.release.xcconfig"; path = "Target Support Files/Pods-Keep UpTests/Pods-Keep UpTests.release.xcconfig"; sourceTree = "<group>"; };
 		C61557761B38D51755E360DE /* Pods_Keep_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,12 +173,17 @@
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
+				B422C716258DA0960032664D /* DateCell.swift */,
+				B422C71A258DA2800032664D /* DateHeader.swift */,
+				B422C71B258DA2800032664D /*  DateHeader.xib */,
+				B422C717258DA0960032664D /* DateCell.xib */,
 				D1F73010258D086C00974903 /* Main.storyboard */,
 				197FC7F0258D5392004AAADA /* SummaryViewController.swift */,
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
 				D1F73018258D087100974903 /* Info.plist */,
 				00DF96B2258D6844009F5D7F /* HabitPage.swift */,
+				B422C714258D91340032664D /* CalendarViewController.swift */,
 			);
 			path = "Keep Up";
 			sourceTree = "<group>";
@@ -322,6 +337,8 @@
 				D1F73017258D087100974903 /* LaunchScreen.storyboard in Resources */,
 				D1F73014258D087100974903 /* Assets.xcassets in Resources */,
 				D1F73012258D086C00974903 /* Main.storyboard in Resources */,
+				B422C71D258DA2800032664D /*  DateHeader.xib in Resources */,
+				B422C719258DA0960032664D /* DateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,9 +471,12 @@
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */,
+				B422C715258D91340032664D /* CalendarViewController.swift in Sources */,
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
+				B422C71C258DA2800032664D /* DateHeader.swift in Sources */,
 				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
+				B422C718258DA0960032664D /* DateCell.swift in Sources */,
 				00DF96B3258D6844009F5D7F /* HabitPage.swift in Sources */,
 				F262DF1C258D5FAB00EEE05E /* InitialViewController.swift in Sources */,
 				F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */,
