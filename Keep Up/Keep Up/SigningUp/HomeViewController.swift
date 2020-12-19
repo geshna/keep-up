@@ -1,13 +1,13 @@
 //
-//  HabitPage.swift
+//  HomeViewController.swift
 //  Keep Up
 //
-//  Created by Lisa Tang on 12/18/20.
+//  Created by Geshna Aggarwal on 12/18/20.
 //
 
 import UIKit
 
-class HabitPage: UIViewController {
+class HomeViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
