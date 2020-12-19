@@ -6,9 +6,10 @@
 //
 
 import UIKit
-
+import Charts
 class TrendsViewController: UIViewController {
 
+    var barChar = BarChartView()
     override func viewDidLoad() {
         super.viewDidLoad()
 
