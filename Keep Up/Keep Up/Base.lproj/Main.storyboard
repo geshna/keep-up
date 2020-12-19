@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iyf-k7-tco">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9l-c3-fnt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -517,7 +517,7 @@
                     <navigationItem key="navigationItem" id="MEP-aR-qsp">
                         <barButtonItem key="rightBarButtonItem" title="Add Friend" id="ibL-2n-TYv">
                             <connections>
-                                <segue destination="KhS-gz-K5y" kind="show" id="n8X-4x-4lb"/>
+                                <segue destination="KhS-gz-K5y" kind="show" id="WSe-wv-vfN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -591,10 +591,11 @@
                         <viewLayoutGuide key="safeArea" id="RFI-Ir-ilu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EgV-kC-bX9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5t-PS-Avp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5404" y="-1284"/>
+            <point key="canvasLocation" x="4561" y="-844"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="yFL-Ju-ADj">
