@@ -28,6 +28,8 @@
 		F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF25258D602600EEE05E /* LoginViewController.swift */; };
 		F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF2F258D67CB00EEE05E /* Utilities.swift */; };
 		F262DF35258D67F400EEE05E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF34258D67F400EEE05E /* Constants.swift */; };
+		F262DF4B258D965100EEE05E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */; };
+		F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF52258D971000EEE05E /* AddFriendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		F262DF25258D602600EEE05E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F262DF2F258D67CB00EEE05E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F262DF34258D67F400EEE05E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		F262DF52258D971000EEE05E /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddFriendViewController.swift; path = Controllers/AddFriendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		D1F73009258D086C00974903 /* Keep Up */ = {
 			isa = PBXGroup;
 			children = (
+				F262DF49258D963300EEE05E /* Controllers */,
 				F262DF39258D682600EEE05E /* Helpers */,
 				F262DF2B258D606300EEE05E /* SigningUp */,
 				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
@@ -164,6 +169,7 @@
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
 				D1F73010258D086C00974903 /* Main.storyboard */,
+				F262DF52258D971000EEE05E /* AddFriendViewController.swift */,
 				197FC7F0258D5392004AAADA /* SummaryViewController.swift */,
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
@@ -208,6 +214,14 @@
 				F262DF34258D67F400EEE05E /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F262DF49258D963300EEE05E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,9 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */,
+				F262DF4B258D965100EEE05E /* FriendsTableViewController.swift in Sources */,
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
 				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
