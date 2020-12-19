@@ -8,16 +8,22 @@
 import UIKit
 
 class DetailHabitViewController: UIViewController {
-
-    @IBOutlet weak var habitNameTxtField: UITextField!
-    @IBOutlet weak var habitDescTxtField: UITextField!
+    @IBOutlet weak var habitNameTextField: UITextField!
+    @IBOutlet weak var habitDescTextField: UITextField!
+    
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! HabitViewController
+        destVC.myHabits.append("new habit")
+        destVC.myDays.append("new day")
+        destVC.myStreaks.append(5)
+    }
 
     /*
     // MARK: - Navigation

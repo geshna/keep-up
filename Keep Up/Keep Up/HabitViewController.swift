@@ -15,10 +15,14 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.reloadData()
     }
-    let myHabits = ["drink water", "eat veggies", "run", "yoga"]
-    let myDays = ["M, W", "S, M, W, Th, F, Sat", "M, W, F", "Th"]
-    let myStreaks = [4, 2, 4, 23]
+    //var myHabits = [] as [String]
+    var myHabits = ["drink water", "eat veggies", "run", "yoga"]
+    //var myDays = [] as [String]
+    var myDays = ["M, W", "S, M, W, Th, F, Sat", "M, W, F", "Th"]
+    //var myStreaks = [] as [Int]
+    var myStreaks = [4, 2, 4, 23]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myHabits.count
@@ -34,4 +38,5 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    @IBAction func unwindtoHabits(_ sender: UIStoryboardSegue) {}
 }
