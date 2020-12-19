@@ -9,6 +9,9 @@ import UIKit
 
 class DetailHabitViewController: UIViewController {
 
+    //@IBOutlet weak var habitNameTxtField: UITextField!
+    //@IBOutlet weak var habitDescTxtField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

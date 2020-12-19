@@ -9,18 +9,16 @@ import UIKit
 
 
 class HabitViewController: UIViewController {
-    @IBOutlet weak var habitName: UILabel!
-    @IBOutlet weak var daysOfWeek: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var streak: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    //@IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
+    //}
     
-
     /*
     // MARK: - Navigation
 
