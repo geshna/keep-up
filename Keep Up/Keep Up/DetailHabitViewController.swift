@@ -15,13 +15,18 @@ class DetailHabitViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        habitNameTextField.delegate = self
+        habitDescTextField.delegate = self
 
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! HabitViewController
-        destVC.myHabits.append("new habit")
-        destVC.myDays.append("new day")
+        //destVC.myHabits.append("new habit")
+        //destVC.myDays.append("new dates")
+        //destVC.myStreaks.append(5)
+        destVC.myHabits.append("\(habitNameTextField.text!)")
+        destVC.myDays.append("\(habitDescTextField.text!)")
         destVC.myStreaks.append(5)
     }
 
@@ -35,4 +40,11 @@ class DetailHabitViewController: UIViewController {
     }
     */
 
+}
+
+extension DetailHabitViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
