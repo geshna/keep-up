@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EAC84C258E138400785B4A /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC84B258E138400785B4A /* HabitViewController.swift */; };
 		197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC7F0258D5392004AAADA /* SummaryViewController.swift */; };
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
 		A0BFFCFBBAAFB16DE07DC1E3 /* Pods_Keep_UpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00EAC84B258E138400785B4A /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		197FC7F0258D5392004AAADA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_UpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BA587AC2403AE40F800F53 /* Pods-Keep Up-Keep UpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up-Keep UpUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up-Keep UpUITests/Pods-Keep Up-Keep UpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				F262DF39258D682600EEE05E /* Helpers */,
 				F262DF2B258D606300EEE05E /* SigningUp */,
 				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
+				00EAC84B258E138400785B4A /* HabitViewController.swift */,
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
@@ -458,6 +461,7 @@
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
 				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
+				00EAC84C258E138400785B4A /* HabitViewController.swift in Sources */,
 				F262DF5E258D9D5D00EEE05E /* HomeViewController.swift in Sources */,
 				F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */,
 				F262DF35258D67F400EEE05E /* Constants.swift in Sources */,
