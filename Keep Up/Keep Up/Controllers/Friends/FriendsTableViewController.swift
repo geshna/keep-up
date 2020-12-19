@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
 class FriendsTableViewController: UITableViewController {
 
     
+    let db = Firestore.firestore()
     
     
     override func viewDidLoad() {
@@ -34,6 +38,29 @@ class FriendsTableViewController: UITableViewController {
         return 0
     }
 
+    func loadFriends(){
+        
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            let uid = user?.uid
+            let userEmail = user?.email
+            
+            
+            
+            //let userDB = db.collection("users").whereField("email", isEqualTo: userEmail).limit(to: 1)
+            //let userFriends = userDB.collection("friends")
+            //db.collection("users").document("")
+            
+            
+        } else {
+          // No user is signed in.
+          // ...
+            print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
+        }
+        
+        
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

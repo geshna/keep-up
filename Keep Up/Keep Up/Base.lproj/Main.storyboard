@@ -450,7 +450,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aQg-Jo-oF5"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99264103169999995" green="0.9678800702" blue="0.90296608209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Awards" id="iAU-mr-I7k"/>
                 </viewController>
@@ -516,7 +516,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydn-EE-ZyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429" y="-1371"/>
+            <point key="canvasLocation" x="2570" y="-798"/>
         </scene>
         <!--Add Friend View Controller-->
         <scene sceneID="Ce8-Tk-Ukr">
@@ -526,15 +526,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Friend!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8R-cg-Vam">
-                                <rect key="frame" x="157" y="187" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Friend!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8R-cg-Vam">
+                                <rect key="frame" x="65.5" y="100" width="283" height="65"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csg-h5-aRr">
-                                <rect key="frame" x="117" y="393" width="180" height="60"/>
+                                <rect key="frame" x="117" y="394" width="180" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <state key="normal" title="Look for friend"/>
@@ -542,25 +541,37 @@
                                     <action selector="lookButtonPressed:" destination="KhS-gz-K5y" eventType="touchUpInside" id="HSU-hl-t89"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email entered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78d-xQ-uDw">
+                                <rect key="frame" x="117" y="533" width="180" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-C3-Ya4">
-                                <rect key="frame" x="92" y="289" width="230" height="34"/>
+                                <rect key="frame" x="76" y="286" width="262" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kEh-Hs-v8u"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99266964199999996" green="0.96782022710000004" blue="0.89886146779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e8R-cg-Vam" firstAttribute="top" secondItem="kEh-Hs-v8u" secondAttribute="top" constant="12" id="VBV-O0-CPD"/>
+                            <constraint firstItem="e8R-cg-Vam" firstAttribute="centerX" secondItem="kEh-Hs-v8u" secondAttribute="centerX" id="nwS-ea-G8e"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FDc-YZ-Ci6"/>
                     <connections>
+                        <outlet property="emailEnteredLabel" destination="78d-xQ-uDw" id="zK2-Ae-XXr"/>
                         <outlet property="emailTextField" destination="hDw-C3-Ya4" id="CbG-tY-KHb"/>
                         <outlet property="lookButton" destination="Csg-h5-aRr" id="arY-1m-gnh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dX-ET-ebG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3302.898550724638" y="-1371.4285714285713"/>
+            <point key="canvasLocation" x="3276.811594202899" y="-889.28571428571422"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="yFL-Ju-ADj">
@@ -877,6 +888,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
