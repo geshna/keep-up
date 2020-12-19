@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class ComposeViewController: UIViewController {
     
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textbox: UITextView!
+    @IBOutlet weak var label: UILabel!
+    var db: Firestore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        MyVariables.docId = "hihi"
+        label.text = String(MyVariables.docId)
+        //label.text = "hi"
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,6 +35,18 @@ class ComposeViewController: UIViewController {
     @IBAction func addPost(_ sender: Any) {
         
         //To do: post data to firebase
+        
+        db = Firestore.firestore()
+        var ref: DocumentReference? = nil
+        let user = Auth.auth().currentUser
+        if let user = user {
+            let userId = user.uid
+        }
+        //db.collection("users").whereField("uid", isEqualTo: userId).getDocuments() {
+        //    (querySnap)
+        //}
+        
+        
         
         //dismiss popover
         presentingViewController?.dismiss(animated: true, completion: nil)
@@ -47,5 +68,7 @@ class ComposeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

@@ -26,7 +26,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     var checkFirstName = false
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -108,13 +107,19 @@ class SignUpViewController: UIViewController {
                     //user was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "email": email, "password": password, "uid":result!.user.uid, "habits":[]]) { (error) in
+                    let docRef = db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "email": email, "password": password, "uid":result!.user.uid, "habits":[]]) { (error) in
                         
                         if error != nil {
                             //show error message
                             self.showError("Error saving user data")
                         }
                     }
+                    
+                    db.collection("users").document(docRef.documentID).updateData([
+                        "docID": docRef.documentID
+                    ])
+                    
+                    MyVariables.docId = docRef.documentID
                     
                     //transition to the home screen
                     self.transitionToHome()
