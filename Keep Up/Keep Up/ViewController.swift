@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
 }
 
+struct MyVariables {
+    static var docId = ""
+}
+
+var docIDVar = "hi"
