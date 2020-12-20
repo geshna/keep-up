@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
@@ -18,6 +20,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    var db: Firestore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +91,25 @@ class LoginViewController: UIViewController {
                     
                 }
                 
+            }
+            db = Firestore.firestore()
+            var ref: DocumentReference? = nil
+            let user = Auth.auth().currentUser
+            var userId = ""
+            if let user = user {
+                userId = user.uid
+            }
+            var documentID = ""
+            db.collection("users").whereField("uid", isEqualTo: userId).getDocuments() {
+                (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        documentID = document.documentID
+                        MyVariables.docId = documentID
+                    }
+                }
             }
             
         }

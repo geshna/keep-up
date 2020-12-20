@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		00EAC84C258E138400785B4A /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC84B258E138400785B4A /* HabitViewController.swift */; };
 		00EAC87A258E2BC500785B4A /* DetailHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */; };
+		00EAC88B258E7B7D00785B4A /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */; };
+		00EAC893258E81E800785B4A /* FillBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC892258E81E700785B4A /* FillBubble.swift */; };
 		197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC7F0258D5392004AAADA /* SummaryViewController.swift */; };
+		19D8AD57258EAA73002BB9DF /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */; };
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
 		A0BFFCFBBAAFB16DE07DC1E3 /* Pods_Keep_UpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */; };
 		B4185964258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
@@ -32,8 +35,11 @@
 		F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF25258D602600EEE05E /* LoginViewController.swift */; };
 		F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF2F258D67CB00EEE05E /* Utilities.swift */; };
 		F262DF35258D67F400EEE05E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF34258D67F400EEE05E /* Constants.swift */; };
+		F262DF4B258D965100EEE05E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */; };
+		F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF52258D971000EEE05E /* AddFriendViewController.swift */; };
 		F262DF5E258D9D5D00EEE05E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF5D258D9D5D00EEE05E /* HomeViewController.swift */; };
 		F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF62258D9F2500EEE05E /* InitialViewController.swift */; };
+		F2B7D57D258EC11F00FAFB6F /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B7D57C258EC11F00FAFB6F /* TempViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +62,10 @@
 /* Begin PBXFileReference section */
 		00EAC84B258E138400785B4A /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHabitViewController.swift; sourceTree = "<group>"; };
+		00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
+		00EAC892258E81E700785B4A /* FillBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBubble.swift; sourceTree = "<group>"; };
 		197FC7F0258D5392004AAADA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
 		1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_UpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BA587AC2403AE40F800F53 /* Pods-Keep Up-Keep UpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up-Keep UpUITests.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up-Keep UpUITests/Pods-Keep Up-Keep UpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CBA04F81A57528C933BD5F /* Pods-Keep Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.release.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,8 +98,11 @@
 		F262DF25258D602600EEE05E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F262DF2F258D67CB00EEE05E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F262DF34258D67F400EEE05E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		F262DF52258D971000EEE05E /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		F262DF5D258D9D5D00EEE05E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F262DF62258D9F2500EEE05E /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F2B7D57C258EC11F00FAFB6F /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,17 +181,22 @@
 		D1F73009258D086C00974903 /* Keep Up */ = {
 			isa = PBXGroup;
 			children = (
+				F262DF49258D963300EEE05E /* Controllers */,
 				F262DF39258D682600EEE05E /* Helpers */,
 				F262DF2B258D606300EEE05E /* SigningUp */,
 				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
 				00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */,
+				00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */,
 				00EAC84B258E138400785B4A /* HabitViewController.swift */,
+				00EAC892258E81E700785B4A /* FillBubble.swift */,
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
 				B4AE132B258E91A700A0D7DE /* ChallengeViewController.swift */,
 				B4AE132D258E91C600A0D7DE /* PostChallengeViewController.swift */,
 				D1F73010258D086C00974903 /* Main.storyboard */,
+				F2B7D57C258EC11F00FAFB6F /* TempViewController.swift */,
+				19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */,
 				197FC7F0258D5392004AAADA /* SummaryViewController.swift */,
 				B4AE1327258E4E8C00A0D7DE /* ComposeViewController.swift */,
 				B4AE1329258E4E9700A0D7DE /* HabitsViewController.swift */,
@@ -226,6 +243,23 @@
 				F262DF34258D67F400EEE05E /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F262DF49258D963300EEE05E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F29DEB3C258E8D6C00ED7620 /* Friends */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F29DEB3C258E8D6C00ED7620 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				F262DF4A258D965100EEE05E /* FriendsTableViewController.swift */,
+				F262DF52258D971000EEE05E /* AddFriendViewController.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,16 +503,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */,
+				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
+				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
+				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,
+				F2B7D57D258EC11F00FAFB6F /* TempViewController.swift in Sources */,
+				00EAC88B258E7B7D00785B4A /* HabitTableViewCell.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
 				B4AE132C258E91A700A0D7DE /* ChallengeViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,
+				19D8AD57258EAA73002BB9DF /* TrendsViewController.swift in Sources */,
 				F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */,
+				F262DF4B258D965100EEE05E /* FriendsTableViewController.swift in Sources */,
 				00EAC87A258E2BC500785B4A /* DetailHabitViewController.swift in Sources */,
 				D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */,
 				D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */,
 				B4AE1328258E4E8C00A0D7DE /* ComposeViewController.swift in Sources */,
 				B4AE132A258E4E9700A0D7DE /* HabitsViewController.swift in Sources */,
+				00EAC893258E81E800785B4A /* FillBubble.swift in Sources */,
 				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
 				00EAC84C258E138400785B4A /* HabitViewController.swift in Sources */,
 				B4AE132E258E91C600A0D7DE /* PostChallengeViewController.swift in Sources */,
