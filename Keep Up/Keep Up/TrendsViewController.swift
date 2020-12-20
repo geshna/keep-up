@@ -48,6 +48,7 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
         
         var entries = [PieChartDataEntry]()
         var temp_entries = [String]()
+        var temp_values = [Double]()
         /// Looping through the habits
        // print("GONE THROUGH HERE")
         if Auth.auth().currentUser != nil {
@@ -71,33 +72,56 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                         temp_entries.append(docId)
                         print(temp_entries[vari])
                         vari+=1
-                    }
+                }
                     
                     
                     
-                    if(temp_entries.isEmpty){
-                        entries.append(PieChartDataEntry(value: 1.0, label: "No Habits Logged Yet!"))
-                        self.indicate_label.text = "No Habits Yet!"
-                    }
-                    else{
+                if(temp_entries.isEmpty){
+                    entries.append(PieChartDataEntry(value: 1.0, label: "No Habits Logged Yet!"))
+                    self.indicate_label.text = "No Habits Yet!"
+                }
+                else{
+                    var count = 0
+                    
                     for entry in temp_entries {
                         
                         print(entry)
-                        entries.append(PieChartDataEntry(value: 10.0,
-                                                         label: entry))
+                        
+                        var val = 0.0
+                        self.db.collection("users").document(userEmail!).collection("habits").document(entry).collection("habitDays").document("init").getDocument { (document, error) in
+                            if let document = document, document.exists {
+                                val = document.data()!["day"]! as! Double
+                                entries.append(PieChartDataEntry(value: val, label: entry))
+                                if (count == temp_entries.count) {
+                                    let set = PieChartDataSet(entries: entries, label: "")
+                                    
+                                    set.colors = ChartColorTemplates.material()
+                                    
+                                    let data = PieChartData(dataSet: set)
+                                    self.pieChart.data = data
+                                }
+                            } else {
+                                print("Document does not exist")
+                            }
+                        }
+                        
+                        //entries.append(PieChartDataEntry(value: temp_values[count],
+                                                         //label: entry))
+                        count = count + 1
                     }
+                    print(entries)
                         
                         self.indicate_label.text = "Look at how many days!"
                     
-                    }
+                }
                     
-                    
+                    /*
                     let set = PieChartDataSet(entries: entries, label: "")
                     
                     set.colors = ChartColorTemplates.material()
                     
                     let data = PieChartData(dataSet: set)
-                    self.pieChart.data = data
+                    self.pieChart.data = data*/
                 }
                 
                 
