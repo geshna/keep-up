@@ -46,7 +46,6 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBAction func unwindtoHabits(_ sender: UIStoryboardSegue) {}
     
-    
     private func addHabitDay(habit:String) {
         let db = Firestore.firestore()
         
@@ -57,6 +56,7 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let docRef = db.collection("users").document(userEmail!).collection("habits").document(habit).collection("habitDays").document("init")
             
             var day = 0
+            var users = ["hi"]
             docRef.getDocument { (document, error) in
                 if let document = document, document.exists {
                     day = document.data()!["day"]! as! Int
@@ -66,6 +66,47 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
                         "day": (day + 1)
                     ])
                     db.collection("users").document(userEmail!).collection("habits").document(habit).collection("habitDays").document(String(day+1)).setData(["date": FirebaseFirestore.Timestamp.init(), "day": (day + 1)])
+                    
+                    // update Streaks
+                    
+                    db.collection("streaks").whereField("users", arrayContains: userEmail!)
+                        .getDocuments() { (querySnapshot, err) in
+                            if let err = err {
+                                print("Error getting documents: \(err)")
+                            } else {
+                                // for each streak:
+                                for document in querySnapshot!.documents {
+                                    print("\(document.documentID) => \(document.data())")
+                                    
+                                    // update startTime only if streak is broken
+                                    let user0Time = (document.data()["user0_time"]! as AnyObject).dateValue()
+                                    let user1Time = (document.data()["user1_time"]! as AnyObject).dateValue()
+                                    let now = Date()
+                                    var broken = false
+                                    let difference0 = now.timeIntervalSince(user0Time)
+                                    let difference1 = now.timeIntervalSince(user1Time)
+                                    if difference0 > 86400 {
+                                        broken = true
+                                    }
+                                    if (difference1 > 86400) {
+                                        broken = true
+                                    }
+                                    if broken {
+                                        db.collection("streaks").document(document.documentID).updateData(["startTime": FirebaseFirestore.Timestamp.init()])
+                                    }
+                                    
+                                    // update your time in the streak
+                                    users = document.data()["users"]! as! Array
+                                    if (users[0] == userEmail!) {
+                                        db.collection("streaks").document(document.documentID).updateData(["user0_time": FirebaseFirestore.Timestamp.init()])
+                                    } else {
+                                        db.collection("streaks").document(document.documentID).updateData(["user1_time": FirebaseFirestore.Timestamp.init()])
+                                    }
+                                    
+                                    
+                                }
+                            }
+                    }
                 } else {
                     print("Document does not exist")
                 }

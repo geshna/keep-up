@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9l-c3-fnt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9l-c3-fnt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -125,7 +126,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Fv-3mq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="Fsx-Ji-ff9">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -138,6 +139,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cZo-Fv-3mq" firstAttribute="top" secondItem="QV3-gE-Gjt" secondAttribute="top" id="Sb6-1a-MDK"/>
@@ -145,8 +147,6 @@
                             <constraint firstItem="QV3-gE-Gjt" firstAttribute="bottom" secondItem="cZo-Fv-3mq" secondAttribute="bottom" id="iYg-mf-jsW"/>
                             <constraint firstItem="QV3-gE-Gjt" firstAttribute="trailing" secondItem="cZo-Fv-3mq" secondAttribute="trailing" id="l6i-2A-ZOc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" image="person.3" catalog="system" id="qCt-U9-jsw"/>
                     <navigationItem key="navigationItem" title="Challenge Board" id="urF-yo-KnY">
@@ -191,13 +191,14 @@
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(Add challenge here!)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-S4-zrf">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zPy-oD-c55"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ovz-S4-zrf" secondAttribute="bottom" id="9hN-UM-v3x"/>
                             <constraint firstItem="5ax-wB-0M1" firstAttribute="top" secondItem="zPy-oD-c55" secondAttribute="top" id="jcs-LI-p9Q"/>
@@ -207,7 +208,6 @@
                             <constraint firstItem="5ax-wB-0M1" firstAttribute="leading" secondItem="zPy-oD-c55" secondAttribute="leading" id="poo-vj-mSe"/>
                             <constraint firstItem="ovz-S4-zrf" firstAttribute="leading" secondItem="zPy-oD-c55" secondAttribute="leading" id="u70-eT-Jtu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zPy-oD-c55"/>
                     </view>
                     <connections>
                         <outlet property="textViewChallenge" destination="ovz-S4-zrf" id="Ezl-bi-EJA"/>
@@ -449,6 +449,7 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="saveButtonPressed:" destination="M3i-yO-OyH" eventType="touchUpInside" id="epb-5L-2lS"/>
                                             <segue destination="UVH-Or-4JH" kind="unwind" unwindAction="unwindtoHabits:" id="V7K-H5-GwK"/>
                                         </connections>
                                     </button>

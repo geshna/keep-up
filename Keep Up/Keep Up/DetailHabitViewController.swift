@@ -42,10 +42,11 @@ class DetailHabitViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }*/
     
-     @IBAction func saveButtonPressed(_ sender: Any) {
+
+    @IBAction func saveButtonPressed(_ sender: Any) {
         addHabit()
-     }
-     
+    }
+    
     private func addHabit() {
         let db = Firestore.firestore()
         
