@@ -635,6 +635,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creativity" translatesAutoresizingMaskIntoConstraints="NO" id="KgZ-JS-pTS">
+                                <rect key="frame" x="20" y="234" width="374" height="486"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&quot;It does not matter how slowly you go as long as you do not stop.&quot;   -Confucius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqZ-vP-Ne0">
                                 <rect key="frame" x="20" y="98" width="374" height="428"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
@@ -1170,6 +1174,7 @@
     </scenes>
     <resources>
         <image name="KeepUp" width="500" height="500"/>
+        <image name="creativity" width="468.29299926757812" height="468.29299926757812"/>
         <image name="fire" width="512" height="512"/>
         <image name="friends" width="256" height="256"/>
         <image name="goal" width="256" height="256"/>
