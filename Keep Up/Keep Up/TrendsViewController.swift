@@ -46,11 +46,12 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
         view.addSubview(pieChart)
         
         var entries = [PieChartDataEntry]()
+        var temp_entries = [String]()
         /// Looping through the habits
-        print("GONE THROUGH HERE")
+       // print("GONE THROUGH HERE")
         if Auth.auth().currentUser != nil {
             
-            print("NOW THROUGH AUTH")
+            //print("NOW THROUGH AUTH")
             let user = Auth.auth().currentUser
             let userEmail = user?.email
             //document(userEmail!).collection("habits")
@@ -60,28 +61,47 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                     print("Error getting documents: \(err)")
                 } else {
                     
-                    print("IN ELSE STATEMETN")
-                    var vari = 1
+                    //print("IN ELSE STATEMETN")
+                    var vari = 0
                     for document in querySnapshot!.documents {
+                        //print("IN LOOP")
                         let docId = document.documentID
-                        entries.append(PieChartDataEntry(value: 10, label: String(docId)))
-                        entries.append(PieChartDataEntry(value: 10, label: "Sleep"))
-                        vari = vari+1
+                        //.append(PieChartDataEntry(value: 10, label: docId))
+                        temp_entries.append(docId)
+                        print(temp_entries[vari])
+                        vari+=1
                     }
+                    
+                    
+                    for entry in temp_entries {
+                        
+                        print(entry)
+                        entries.append(PieChartDataEntry(value: 10.0,
+                                                         label: entry))
+                    }
+                    
+                    let set = PieChartDataSet(entries: entries, label: "")
+                    
+                    set.colors = ChartColorTemplates.material()
+                    
+                    let data = PieChartData(dataSet: set)
+                    self.pieChart.data = data
+                    
                 }
                 
                 
             }
         }
         
-        
+
        /*
         for x in 0..<10 {
             entries.append(ChartDataEntry(x: Double(x),
                                             y: Double(x)))
         }
         */
-        let set = PieChartDataSet(entries: entries)
+        //entries.append(PieChartDataEntry(value: 10, label: "Singing"))
+        let set = PieChartDataSet(entries: entries, label: "")
         
         set.colors = ChartColorTemplates.material()
         
