@@ -8,6 +8,9 @@
 import UIKit
 import Charts
 import QuartzCore
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
 class TrendsViewController: UIViewController, ChartViewDelegate {
     
@@ -17,6 +20,8 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
     //, ChartViewDelegate
     //Bar Chart Code
    // var barChart = BarChartView()
+    
+    let db = Firestore.firestore()
     @IBOutlet weak var intro_label: UILabel!
     
     override func viewDidLoad() {
@@ -31,6 +36,7 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
     }
     
     override func viewDidLayoutSubviews(){
+        
         super.viewDidLayoutSubviews()
         
         pieChart.frame = CGRect(x: 0, y: 0,
@@ -40,11 +46,34 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
         view.addSubview(pieChart)
         
         var entries = [PieChartDataEntry]()
+        /// Looping through the habits
+        print("GONE THROUGH HERE")
+        if Auth.auth().currentUser != nil {
+            
+            print("NOW THROUGH AUTH")
+            let user = Auth.auth().currentUser
+            let userEmail = user?.email
+            //document(userEmail!).collection("habits")
+            
+            db.collection("users").document(userEmail!).collection("habits").getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    
+                    print("IN ELSE STATEMETN")
+                    var vari = 1
+                    for document in querySnapshot!.documents {
+                        let docId = document.documentID
+                        entries.append(PieChartDataEntry(value: 10, label: String(docId)))
+                        entries.append(PieChartDataEntry(value: 10, label: "Sleep"))
+                        vari = vari+1
+                    }
+                }
+                
+                
+            }
+        }
         
-        entries.append(PieChartDataEntry(value: 50, label: "Singing"))
-        entries.append(PieChartDataEntry(value: 20, label: "Sleeping"))
-        entries.append(PieChartDataEntry(value: 10, label: "Cooking"))
-        entries.append(PieChartDataEntry(value: 10, label: "Cleaning"))
         
        /*
         for x in 0..<10 {
