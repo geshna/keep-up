@@ -14,6 +14,7 @@ import FirebaseFirestore
 
 class TrendsViewController: UIViewController, ChartViewDelegate {
     
+    @IBOutlet weak var indicate_label: UILabel!
     var pieChart = PieChartView()
     
     //var lineChart = LineChartView()
@@ -73,12 +74,23 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                     }
                     
                     
+                    
+                    if(temp_entries.isEmpty){
+                        entries.append(PieChartDataEntry(value: 1.0, label: "No Habits Logged Yet!"))
+                        self.indicate_label.text = "No Habits Yet!"
+                    }
+                    else{
                     for entry in temp_entries {
                         
                         print(entry)
                         entries.append(PieChartDataEntry(value: 10.0,
                                                          label: entry))
                     }
+                        
+                        self.indicate_label.text = "Look at how many days!"
+                    
+                    }
+                    
                     
                     let set = PieChartDataSet(entries: entries, label: "")
                     
@@ -86,7 +98,6 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                     
                     let data = PieChartData(dataSet: set)
                     self.pieChart.data = data
-                    
                 }
                 
                 
