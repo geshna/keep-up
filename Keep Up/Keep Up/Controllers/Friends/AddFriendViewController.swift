@@ -26,8 +26,12 @@ class AddFriendViewController: UIViewController {
         super.viewDidLoad()
         //print("DOC ID MY VARIABLES: \(MyVariables.docId)")
         // Do any additional setup after loading the view.
+        emailEnteredLabel.alpha = 0
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        emailEnteredLabel.text = ""
+        emailEnteredLabel.alpha = 0
+    }
     
     @IBAction func lookButtonPressed(_ sender: Any) {
         
@@ -36,7 +40,7 @@ class AddFriendViewController: UIViewController {
         let emailEntered = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         emailTextField.text = ""
-        emailEnteredLabel.text = emailEntered
+        //emailEnteredLabel.text = emailEntered
         
         if Auth.auth().currentUser != nil {
             let user = Auth.auth().currentUser
@@ -60,6 +64,9 @@ class AddFriendViewController: UIViewController {
                                 if let document = document, document.exists {
                                     print("friend already exists")
                                     i = 1
+                                    
+                                    
+                                    
                                 }else{
                                     print("creating friend")
                                     
@@ -70,6 +77,9 @@ class AddFriendViewController: UIViewController {
                                 //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())
                             print("added friend")
                             self.db.collection("users").document(userEmail!).collection("friends").document(emailEntered).setData(document.data())
+                            self.db.collection("users").document(emailEntered).collection("friends").document(userEmail!).setData(["email":userEmail!,"uid":user?.uid, "displayName":user?.displayName])
+                            self.emailEnteredLabel.text = "Successfully added \(emailEntered) as a friend!"
+                            self.emailEnteredLabel.alpha = 1
                             //print("DOC ID MY VARIABLES: \(MyVariables.docId)")
                            }
                             //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())

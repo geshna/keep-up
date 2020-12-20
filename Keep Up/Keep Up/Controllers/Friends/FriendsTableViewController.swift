@@ -13,8 +13,10 @@ import FirebaseFirestore
 class FriendsTableViewController: UITableViewController {
 
     
+   
     let db = Firestore.firestore()
-    
+    var friendsArray = [[String:Any]]()
+    var friendsID = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +29,23 @@ class FriendsTableViewController: UITableViewController {
         
         loadFriends()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        friendsArray.removeAll()
+        friendsID.removeAll()
+        loadFriends()
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.friendsID.count
     }
 
     func loadFriends(){
@@ -54,33 +62,40 @@ class FriendsTableViewController: UITableViewController {
                     } else {
                         for document in querySnapshot!.documents{
                             print("\(document.documentID) => \(document.data())")
+                            self.friendsArray.append(document.data())
+                            self.friendsID.append(document.documentID)
                         }
                     }
+                    print("friends ID ==> \(self.friendsID)")
+                    print("friends array ==> \(self.friendsArray)")
+                    self.tableView.reloadData()
                 }
-            
-            //let userDB = db.collection("users").whereField("email", isEqualTo: userEmail).limit(to: 1)
-            //let userFriends = userDB.collection("friends")
-            //db.collection("users").document("")
-            
             
         } else {
           // No user is signed in.
           // ...
             print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
         }
-        
+        print("friends array count: \(self.friendsArray.count)")
         
     }
     
-    /*
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
 
+        let friend = friendsArray[indexPath.row]
+        let displayName = friend["displayName"]
+        //print("display name: \(displayName)")
+        //let idName = id[""]
+        //print("idName:\(idName) and id: \(id)")
+        cell.textLabel!.text = displayName as! String
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
