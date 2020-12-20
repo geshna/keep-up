@@ -24,7 +24,7 @@ class AddStreakViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createdStreakLabel.alpha = 0
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
