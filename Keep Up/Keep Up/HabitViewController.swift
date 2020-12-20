@@ -17,6 +17,7 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
@@ -38,7 +39,7 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.habitName.text = myHabits[indexPath.row]
         cell.daysOfWeek.text = myDays[indexPath.row]
-        cell.myStreak.text = "My Streak:" + String(myStreaks[indexPath.row])
+        cell.myStreak.text = "My Streak: " + String(myStreaks[indexPath.row])
         
         return cell
     }
