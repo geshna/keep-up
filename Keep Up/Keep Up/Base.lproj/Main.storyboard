@@ -161,8 +161,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Days of Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-Oo-S36">
-                                                            <rect key="frame" x="8" y="54" width="172" height="19"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sun, Mon, Tues, Wed, Thus, Fri, Sat" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-Oo-S36">
+                                                            <rect key="frame" x="8" y="53" width="266" height="19"/>
                                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -180,11 +180,11 @@
                                                     <color key="backgroundColor" red="0.9797027707" green="0.85262697939999998" blue="0.49499541520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="D0b-mk-fRZ" firstAttribute="leading" secondItem="dmJ-Zt-nx2" secondAttribute="trailing" constant="22" id="20g-OC-yeU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="X4m-Oo-S36" secondAttribute="trailing" constant="274.5" id="6lm-6I-z4l"/>
                                                         <constraint firstItem="dmJ-Zt-nx2" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="LZp-el-gWi"/>
                                                         <constraint firstAttribute="bottom" secondItem="X4m-Oo-S36" secondAttribute="bottom" constant="7" id="Sdv-Pg-eeX"/>
                                                         <constraint firstAttribute="trailing" secondItem="D0b-mk-fRZ" secondAttribute="trailing" constant="8" id="VMq-sK-NoQ"/>
                                                         <constraint firstItem="D0b-mk-fRZ" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="30" id="eLz-Eu-42q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="X4m-Oo-S36" secondAttribute="trailing" constant="100" id="h8O-FX-DWJ"/>
                                                         <constraint firstItem="X4m-Oo-S36" firstAttribute="top" secondItem="dmJ-Zt-nx2" secondAttribute="bottom" constant="12.5" id="ll1-1f-C5s"/>
                                                         <constraint firstAttribute="bottom" secondItem="D0b-mk-fRZ" secondAttribute="bottom" constant="30" id="q8u-mo-MPS"/>
                                                         <constraint firstItem="X4m-Oo-S36" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="shy-d9-IMY"/>
@@ -318,11 +318,15 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Habit Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-Rh-cUn">
                                 <rect key="frame" x="20" y="160.5" width="374" height="34"/>
+                                <color key="backgroundColor" red="0.9797027707" green="0.85262697939999998" blue="0.49499541520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How Will You Do It?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="004-2b-PgL">
                                 <rect key="frame" x="20" y="277.5" width="374" height="34"/>
+                                <color key="backgroundColor" red="0.9797027707" green="0.85262697939999998" blue="0.49499541520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
