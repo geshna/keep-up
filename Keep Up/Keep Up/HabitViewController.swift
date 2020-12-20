@@ -6,7 +6,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+import FirebaseAuth
 
+var habit = "drinkWater"
 
 class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -16,6 +20,7 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
+        addHabitDay(habit: habit)
     }
     //var myHabits = [] as [String]
     var myHabits = ["drink water", "eat veggies", "run", "yoga"]
@@ -39,4 +44,40 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     @IBAction func unwindtoHabits(_ sender: UIStoryboardSegue) {}
+    
+    
+    private func addHabitDay(habit:String) {
+        let db = Firestore.firestore()
+        
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            let userEmail = user?.email
+           
+            let docRef = db.collection("users").document(userEmail!).collection("habits").document(habit).collection("habitDays").document("init")
+            
+            var day = 0
+            docRef.getDocument { (document, error) in
+                if let document = document, document.exists {
+                    day = document.data()!["day"]! as! Int
+                    //print("Day of habit: \(day)")
+                    //print(day)
+                    docRef.updateData([
+                        "day": (day + 1)
+                    ])
+                    db.collection("users").document(userEmail!).collection("habits").document(habit).collection("habitDays").document(String(day+1)).setData(["date": FirebaseFirestore.Timestamp.init(), "day": (day + 1)])
+                } else {
+                    print("Document does not exist")
+                }
+            }
+            
+            
+            
+            //day = db.collection("users").document(userEmail!).collection("habits").document(habit).collection("habitDays").document("init").
+            
+        } else {
+          // No user is signed in.
+          // ...
+            print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
+        }
+    }
 }

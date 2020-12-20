@@ -54,6 +54,7 @@ class DetailHabitViewController: UIViewController {
             let userEmail = user?.email
            
             db.collection("users").document(userEmail!).collection("habits").document(habitNameTextField.text!).collection("habitDays").document("init").setData(["date": FirebaseFirestore.Timestamp.init()])
+            db.collection("users").document(userEmail!).collection("habits").document(habitNameTextField.text!).collection("habitDays").document("init").setData(["date": FirebaseFirestore.Timestamp.init(), "day": 0])
             
         } else {
           // No user is signed in.
