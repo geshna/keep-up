@@ -152,7 +152,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5d-zf-T37">
                                 <rect key="frame" x="90" y="407" width="235" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99436956639999996" green="0.82851970200000002" blue="0.45505934949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9714743495" green="0.87008482220000005" blue="0.51121240850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                 <state key="normal" title="Create New Streak">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -639,8 +639,8 @@
                                 <rect key="frame" x="20" y="234" width="374" height="486"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&quot;It does not matter how slowly you go as long as you do not stop.&quot;   -Confucius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqZ-vP-Ne0">
-                                <rect key="frame" x="20" y="98" width="374" height="428"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It does not matter how slowly you go as long as you do not stop.  -Confucius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqZ-vP-Ne0">
+                                <rect key="frame" x="20" y="278" width="374" height="81.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -661,11 +661,11 @@
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PqZ-vP-Ne0" firstAttribute="leading" secondItem="aQg-Jo-oF5" secondAttribute="leading" constant="20" id="CnR-Fp-uUA"/>
-                            <constraint firstItem="PqZ-vP-Ne0" firstAttribute="top" secondItem="aQg-Jo-oF5" secondAttribute="top" constant="10" id="LSw-Vi-Ebw"/>
                             <constraint firstItem="3We-Bl-iOm" firstAttribute="leading" secondItem="aQg-Jo-oF5" secondAttribute="leading" constant="111" id="NDa-WA-Y0q"/>
                             <constraint firstItem="aQg-Jo-oF5" firstAttribute="trailing" secondItem="PqZ-vP-Ne0" secondAttribute="trailing" constant="20" id="OKC-OA-BUL"/>
                             <constraint firstItem="aQg-Jo-oF5" firstAttribute="trailing" secondItem="3We-Bl-iOm" secondAttribute="trailing" constant="111" id="Qd5-AY-9Ct"/>
                             <constraint firstItem="aQg-Jo-oF5" firstAttribute="bottom" secondItem="3We-Bl-iOm" secondAttribute="bottom" constant="51" id="U8x-FY-9J8"/>
+                            <constraint firstItem="PqZ-vP-Ne0" firstAttribute="top" secondItem="aQg-Jo-oF5" secondAttribute="top" constant="190" id="loR-nt-CQ1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quote of the Day" id="iAU-mr-I7k"/>
@@ -700,8 +700,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's look at how you're doing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17y-PX-etN">
                                 <rect key="frame" x="148" y="171" width="246" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99251049757003784" green="0.74713385105133057" blue="0.39067625999450684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="14"/>
+                                <color key="backgroundColor" red="0.9714743495" green="0.87008482220000005" blue="0.51121240850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
