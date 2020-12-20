@@ -11,6 +11,8 @@
 		00EAC87A258E2BC500785B4A /* DetailHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */; };
 		00EAC88B258E7B7D00785B4A /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */; };
 		00EAC893258E81E800785B4A /* FillBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC892258E81E700785B4A /* FillBubble.swift */; };
+		00EAC90A258EDF8700785B4A /* StreaksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC909258EDF8600785B4A /* StreaksViewController.swift */; };
+		00EAC90F258EE33C00785B4A /* StreaksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC90E258EE33C00785B4A /* StreaksTableViewCell.swift */; };
 		197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC7F0258D5392004AAADA /* SummaryViewController.swift */; };
 		19D8AD57258EAA73002BB9DF /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */; };
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
@@ -20,6 +22,8 @@
 		B4185966258D2C1E00CBFA16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */; };
 		B4AE1328258E4E8C00A0D7DE /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE1327258E4E8C00A0D7DE /* ComposeViewController.swift */; };
 		B4AE132A258E4E9700A0D7DE /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE1329258E4E9700A0D7DE /* HabitsViewController.swift */; };
+		B4AE132C258E91A700A0D7DE /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE132B258E91A700A0D7DE /* ChallengeViewController.swift */; };
+		B4AE132E258E91C600A0D7DE /* PostChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE132D258E91C600A0D7DE /* PostChallengeViewController.swift */; };
 		D1F7300B258D086C00974903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300A258D086C00974903 /* AppDelegate.swift */; };
 		D1F7300D258D086C00974903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300C258D086C00974903 /* SceneDelegate.swift */; };
 		D1F7300F258D086C00974903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7300E258D086C00974903 /* ViewController.swift */; };
@@ -62,6 +66,8 @@
 		00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHabitViewController.swift; sourceTree = "<group>"; };
 		00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		00EAC892258E81E700785B4A /* FillBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBubble.swift; sourceTree = "<group>"; };
+		00EAC909258EDF8600785B4A /* StreaksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreaksViewController.swift; sourceTree = "<group>"; };
+		00EAC90E258EE33C00785B4A /* StreaksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreaksTableViewCell.swift; sourceTree = "<group>"; };
 		197FC7F0258D5392004AAADA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
 		1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_UpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,8 @@
 		B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B4AE1327258E4E8C00A0D7DE /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		B4AE1329258E4E9700A0D7DE /* HabitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		B4AE132B258E91A700A0D7DE /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		B4AE132D258E91C600A0D7DE /* PostChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostChallengeViewController.swift; sourceTree = "<group>"; };
 		B622841432ED3AD5269E2AE4 /* Pods-Keep Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep Up.debug.xcconfig"; path = "Target Support Files/Pods-Keep Up/Pods-Keep Up.debug.xcconfig"; sourceTree = "<group>"; };
 		BDF1F65C1ACBF0EEB6283EE5 /* Pods-Keep UpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keep UpTests.release.xcconfig"; path = "Target Support Files/Pods-Keep UpTests/Pods-Keep UpTests.release.xcconfig"; sourceTree = "<group>"; };
 		C61557761B38D51755E360DE /* Pods_Keep_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +196,8 @@
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
 				D1F7300E258D086C00974903 /* ViewController.swift */,
+				B4AE132B258E91A700A0D7DE /* ChallengeViewController.swift */,
+				B4AE132D258E91C600A0D7DE /* PostChallengeViewController.swift */,
 				D1F73010258D086C00974903 /* Main.storyboard */,
 				F2B7D57C258EC11F00FAFB6F /* TempViewController.swift */,
 				19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */,
@@ -197,6 +207,8 @@
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
 				D1F73018258D087100974903 /* Info.plist */,
+				00EAC909258EDF8600785B4A /* StreaksViewController.swift */,
+				00EAC90E258EE33C00785B4A /* StreaksTableViewCell.swift */,
 			);
 			path = "Keep Up";
 			sourceTree = "<group>";
@@ -499,11 +511,13 @@
 			files = (
 				F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
+				00EAC90A258EDF8700785B4A /* StreaksViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,
 				F2B7D57D258EC11F00FAFB6F /* TempViewController.swift in Sources */,
 				00EAC88B258E7B7D00785B4A /* HabitTableViewCell.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
+				B4AE132C258E91A700A0D7DE /* ChallengeViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,
 				19D8AD57258EAA73002BB9DF /* TrendsViewController.swift in Sources */,
@@ -516,7 +530,9 @@
 				B4AE132A258E4E9700A0D7DE /* HabitsViewController.swift in Sources */,
 				00EAC893258E81E800785B4A /* FillBubble.swift in Sources */,
 				197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */,
+				00EAC90F258EE33C00785B4A /* StreaksTableViewCell.swift in Sources */,
 				00EAC84C258E138400785B4A /* HabitViewController.swift in Sources */,
+				B4AE132E258E91C600A0D7DE /* PostChallengeViewController.swift in Sources */,
 				F262DF5E258D9D5D00EEE05E /* HomeViewController.swift in Sources */,
 				F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */,
 				F262DF35258D67F400EEE05E /* Constants.swift in Sources */,
