@@ -26,6 +26,7 @@ class ChallengeViewController: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = UIColor.init(red: 253/255, green: 247/255, blue: 231/255, alpha: 1)
         
         //Set the firebase database reference
         ref = Database.database().reference()
