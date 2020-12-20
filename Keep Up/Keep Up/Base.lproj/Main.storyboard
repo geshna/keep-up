@@ -10,19 +10,109 @@
         <!--Streaks-->
         <scene sceneID="uzo-Ns-R7K">
             <objects>
-                <viewController id="Euc-bM-MUg" sceneMemberID="viewController">
+                <viewController id="Euc-bM-MUg" customClass="StreaksViewController" customModule="Keep_Up" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sg-FT-ItC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35t-fB-run">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StreaksTableViewCell" rowHeight="108" id="BCw-zB-8Uc" customClass="StreaksTableViewCell" customModule="Keep_Up" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BCw-zB-8Uc" id="WNr-8i-n1R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSS-lX-ZoG">
+                                                    <rect key="frame" x="20" y="14" width="374" height="79"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-2G-UJ3">
+                                                            <rect key="frame" x="8" y="8" width="205" height="33"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Habit Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5F-UQ-E2v">
+                                                            <rect key="frame" x="8" y="54" width="205" height="19"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="3qt-ZD-S7B">
+                                                            <rect key="frame" x="327" y="13" width="47" height="42"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="47" id="DZu-ER-0PP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Streak: 8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-4q-DlE">
+                                                            <rect key="frame" x="214" y="30" width="108" height="18.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="108" id="vzb-Cg-hwr"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.9797027707" green="0.85262697939999998" blue="0.49499541520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="X5F-UQ-E2v" secondAttribute="bottom" constant="6" id="5Fn-et-Mx5"/>
+                                                        <constraint firstItem="X5F-UQ-E2v" firstAttribute="leading" secondItem="vSS-lX-ZoG" secondAttribute="leading" constant="8" id="8gC-bO-oWr"/>
+                                                        <constraint firstItem="5T9-4q-DlE" firstAttribute="top" secondItem="vSS-lX-ZoG" secondAttribute="top" constant="30" id="HiP-yL-kZo"/>
+                                                        <constraint firstItem="JmV-2G-UJ3" firstAttribute="leading" secondItem="vSS-lX-ZoG" secondAttribute="leading" constant="8" id="IGv-tS-znE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3qt-ZD-S7B" secondAttribute="trailing" id="PIA-cO-gy3"/>
+                                                        <constraint firstItem="JmV-2G-UJ3" firstAttribute="top" secondItem="vSS-lX-ZoG" secondAttribute="top" constant="8" id="TTS-qG-LmN"/>
+                                                        <constraint firstItem="5T9-4q-DlE" firstAttribute="leading" secondItem="JmV-2G-UJ3" secondAttribute="trailing" constant="1" id="Ubf-0s-Owb"/>
+                                                        <constraint firstItem="3qt-ZD-S7B" firstAttribute="leading" secondItem="5T9-4q-DlE" secondAttribute="trailing" constant="5" id="aPL-t1-dmd"/>
+                                                        <constraint firstItem="5T9-4q-DlE" firstAttribute="leading" secondItem="JmV-2G-UJ3" secondAttribute="trailing" constant="1" id="f58-YE-nRw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3qt-ZD-S7B" secondAttribute="bottom" constant="24" id="fsC-Ft-Vtd"/>
+                                                        <constraint firstItem="X5F-UQ-E2v" firstAttribute="top" secondItem="5T9-4q-DlE" secondAttribute="bottom" constant="5.5" id="h4Z-VW-2DZ"/>
+                                                        <constraint firstItem="3qt-ZD-S7B" firstAttribute="top" secondItem="vSS-lX-ZoG" secondAttribute="top" constant="13" id="kuK-5f-108"/>
+                                                        <constraint firstAttribute="height" constant="79" id="lsF-kc-qxc"/>
+                                                        <constraint firstItem="X5F-UQ-E2v" firstAttribute="top" secondItem="JmV-2G-UJ3" secondAttribute="bottom" constant="13" id="nl9-py-nah"/>
+                                                        <constraint firstAttribute="width" constant="374" id="uDb-ji-xgD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="X5F-UQ-E2v" secondAttribute="trailing" constant="161" id="zzJ-cR-CkX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.99086648229999996" green="0.9730024934" blue="0.91495102640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="vSS-lX-ZoG" firstAttribute="leading" secondItem="WNr-8i-n1R" secondAttribute="leadingMargin" id="Fma-4v-mMt"/>
+                                                <constraint firstItem="vSS-lX-ZoG" firstAttribute="trailing" secondItem="WNr-8i-n1R" secondAttribute="trailingMargin" id="PF7-H4-gK5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vSS-lX-ZoG" secondAttribute="bottom" constant="4" id="XsV-Xs-rxA"/>
+                                                <constraint firstItem="vSS-lX-ZoG" firstAttribute="top" secondItem="WNr-8i-n1R" secondAttribute="topMargin" constant="3" id="mOo-Vc-1aG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendName" destination="JmV-2G-UJ3" id="brO-XP-bur"/>
+                                            <outlet property="friendStreak" destination="5T9-4q-DlE" id="l69-E9-0hd"/>
+                                            <outlet property="habitName" destination="X5F-UQ-E2v" id="wbM-ni-3sO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="czX-iZ-LTZ"/>
+                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="35t-fB-run" firstAttribute="leading" secondItem="czX-iZ-LTZ" secondAttribute="leading" id="5dV-Lh-afG"/>
+                            <constraint firstItem="czX-iZ-LTZ" firstAttribute="trailing" secondItem="35t-fB-run" secondAttribute="trailing" id="U05-ov-B09"/>
+                            <constraint firstItem="35t-fB-run" firstAttribute="top" secondItem="czX-iZ-LTZ" secondAttribute="top" id="ekb-HY-YCU"/>
+                            <constraint firstItem="czX-iZ-LTZ" firstAttribute="bottom" secondItem="35t-fB-run" secondAttribute="bottom" id="gRi-9K-Q1e"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Streaks" image="paperplane" catalog="system" id="cc1-HS-ynq"/>
                     <navigationItem key="navigationItem" id="dYf-L6-yeG"/>
+                    <connections>
+                        <outlet property="tableView" destination="35t-fB-run" id="CB2-4k-jdr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-n5-fPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355" y="-1406"/>
+            <point key="canvasLocation" x="1353.6231884057972" y="-1406.25"/>
         </scene>
         <!--Challenge Board-->
         <scene sceneID="HHQ-fS-vch">
@@ -1041,7 +1131,8 @@
     </scenes>
     <resources>
         <image name="awards" width="256" height="256"/>
-        <image name="circle" catalog="system" width="64" height="60"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="fire" width="512" height="512"/>
         <image name="friends" width="256" height="256"/>
         <image name="goal" width="256" height="256"/>
         <image name="habits" width="256" height="256"/>
