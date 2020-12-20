@@ -38,7 +38,6 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "HabitTableViewCell", for: indexPath) as! HabitTableViewCell
         
         cell.habitName.text = myHabits[indexPath.row]
-        cell.daysOfWeek.text = myDays[indexPath.row]
         cell.myStreak.text = "My Streak: " + String(myStreaks[indexPath.row])
         
         return cell
