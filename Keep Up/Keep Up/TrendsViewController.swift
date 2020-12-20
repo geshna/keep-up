@@ -48,6 +48,7 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
         
         var entries = [PieChartDataEntry]()
         var temp_entries = [String]()
+        
         /// Looping through the habits
        // print("GONE THROUGH HERE")
         if Auth.auth().currentUser != nil {
@@ -55,13 +56,14 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
             //print("NOW THROUGH AUTH")
             let user = Auth.auth().currentUser
             let userEmail = user?.email
+            
             //document(userEmail!).collection("habits")
             
             db.collection("users").document(userEmail!).collection("habits").getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {
-                    
+                    var temp_days = [Double]()
                     //print("IN ELSE STATEMETN")
                     var vari = 0
                     for document in querySnapshot!.documents {
@@ -70,9 +72,29 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                         //.append(PieChartDataEntry(value: 10, label: docId))
                         temp_entries.append(docId)
                         print(temp_entries[vari])
+                        
+                        self.db.collection("users").document(userEmail!).collection("habits").document(docId).collection("habitDays").document("init").getDocument { (document2, error) in
+                            if error == nil {
+                                if document2 != nil && document2!.exists {
+                                    
+                                    let documentData = document2!.data()
+                                    
+                                    let day_val = documentData?["day"] as? Double ?? 0.0
+                                    
+                                    temp_days.append(day_val)
+                                    
+
+                                    }
+                                
+                                }
+                            
+                                }
                         vari+=1
-                    }
-                    
+
+                            for val in temp_days {
+                                print(val)
+                            }
+                        }
                     
                     
                     if(temp_entries.isEmpty){
