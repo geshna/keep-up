@@ -18,6 +18,7 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.init(red: 253/255, green: 247/255, blue: 231/255, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
@@ -42,6 +43,38 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        //delete
+        let delete =  UIContextualAction(style: .normal, title: "Delete") { (action, view, completionHandler) in print("delete\(indexPath.row)")
+            completionHandler(true)
+        }
+        
+        delete.image = UIImage(systemName: "trash.fill")
+        let deleteRed = UIColor(red:204/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1.0)
+        delete.backgroundColor = deleteRed
+        
+        //swipe actions
+        let swipe = UISwipeActionsConfiguration(actions: [delete])
+        return swipe
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        //pin
+        let done =  UIContextualAction(style: .normal, title: "Done") { (action, view, completionHandler) in print("done\(indexPath.row + 1)")
+            completionHandler(true)
+        }
+        
+        done.image = UIImage(systemName: "checkmark.square.fill")
+        let doneGreen = UIColor(red:102/255.0, green: 204/255.0, blue: 143/255.0, alpha: 1.0)
+        done.backgroundColor = doneGreen
+        
+        //swipe actions
+        let swipe = UISwipeActionsConfiguration(actions: [done])
+        return swipe
+    }
+
     
     @IBAction func unwindtoHabits(_ sender: UIStoryboardSegue) {}
     

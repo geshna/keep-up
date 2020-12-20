@@ -15,6 +15,7 @@ class StreaksViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = UIColor.init(red: 253/255, green: 247/255, blue: 231/255, alpha: 1)
 
         // Do any additional setup after loading the view.
     }
