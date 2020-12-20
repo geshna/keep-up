@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+import FirebaseAuth
 
 class DetailHabitViewController: UIViewController {
     @IBOutlet weak var habitNameTextField: UITextField!
@@ -37,8 +40,27 @@ class DetailHabitViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+    }*/
+    
+     @IBAction func saveButtonPressed(_ sender: Any) {
+        addHabit()
+     }
+     
+    private func addHabit() {
+        let db = Firestore.firestore()
+        
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            let userEmail = user?.email
+           
+            db.collection("users").document(userEmail!).collection("habits").document(habitNameTextField.text!).collection("habitDays").document("init").setData(["date": FirebaseFirestore.Timestamp.init()])
+            
+        } else {
+          // No user is signed in.
+          // ...
+            print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
+        }
     }
-    */
 
 }
 
