@@ -15,6 +15,10 @@ var habit = "drinkWater"
 class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    var habitsArray = [[String:Any]]()
+    var habitNames = [String]()
+    //var habitsID = [Int]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
@@ -22,8 +26,14 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        addHabitDay(habit: habit)
+        //addHabitDay(habit: habit)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.habitsArray.removeAll()
+        self.habitNames.removeAll()
+        loadHabits()
+    }
+    
     //var myHabits = [] as [String]
     var myHabits = ["drink water", "eat veggies", "run", "yoga"]
     //var myDays = [] as [String]
@@ -31,15 +41,20 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //var myStreaks = [] as [Int]
     var myStreaks = [4, 2, 4, 23]
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myHabits.count
+        return self.habitNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HabitTableViewCell", for: indexPath) as! HabitTableViewCell
         
-        cell.habitName.text = myHabits[indexPath.row]
-        cell.myStreak.text = "My Streak: " + String(myStreaks[indexPath.row])
+        //cell.habitName.text = myHabits[indexPath.row]
+        cell.habitName.text = self.habitNames[indexPath.row]
+        cell.myStreak.text = ""
         
         return cell
     }
@@ -65,6 +80,8 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let done =  UIContextualAction(style: .normal, title: "Done") { (action, view, completionHandler) in print("done\(indexPath.row + 1)")
             completionHandler(true)
         }
+        addHabitDay(habit: habitNames[indexPath.row])
+        print("add habit day: \(habitNames[indexPath.row])")
         
         done.image = UIImage(systemName: "checkmark.square.fill")
         let doneGreen = UIColor(red:102/255.0, green: 204/255.0, blue: 143/255.0, alpha: 1.0)
@@ -77,6 +94,38 @@ class HabitViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     @IBAction func unwindtoHabits(_ sender: UIStoryboardSegue) {}
+    
+    func loadHabits() {
+        let db = Firestore.firestore()
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            //let uid = user?.uid
+            let userEmail = user?.email
+            
+            let habitsRef = db.collection("users").document(userEmail!).collection("habits")
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents{
+                            print("\(document.documentID) => \(document.data())")
+                            self.habitsArray.append(document.data())
+                            self.habitNames.append(document.documentID)
+                        }
+                    }
+                    print("habits ID ==> \(self.habitNames)")
+                    print("habits array ==> \(self.habitsArray)")
+                    self.tableView.reloadData()
+                }
+            
+        } else {
+          // No user is signed in.
+          // ...
+            print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
+        }
+        print("friends array count: \(self.habitsArray.count)")
+        
+    }
     
     private func addHabitDay(habit:String) {
         let db = Firestore.firestore()
