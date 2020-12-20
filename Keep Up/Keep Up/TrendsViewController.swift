@@ -7,6 +7,7 @@
 
 import UIKit
 import Charts
+import QuartzCore
 
 class TrendsViewController: UIViewController, ChartViewDelegate {
     
@@ -16,12 +17,15 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
     //, ChartViewDelegate
     //Bar Chart Code
    // var barChart = BarChartView()
-   
+    @IBOutlet weak var intro_label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //barChart.delegate = self
         //lineChart.delegate = self
         pieChart.delegate = self
+        intro_label.layer.masksToBounds = true
+        intro_label.layer.cornerRadius = 20.0
 
         // Do any additional setup after loading the view.
     }
@@ -35,15 +39,22 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
         pieChart.center = view.center
         view.addSubview(pieChart)
         
-        var entries = [ChartDataEntry]()
+        var entries = [PieChartDataEntry]()
+        
+        entries.append(PieChartDataEntry(value: 50, label: "Singing"))
+        entries.append(PieChartDataEntry(value: 20, label: "Sleeping"))
+        entries.append(PieChartDataEntry(value: 10, label: "Cooking"))
+        entries.append(PieChartDataEntry(value: 10, label: "Cleaning"))
+        
+       /*
         for x in 0..<10 {
             entries.append(ChartDataEntry(x: Double(x),
                                             y: Double(x)))
         }
-        
+        */
         let set = PieChartDataSet(entries: entries)
         
-        set.colors = ChartColorTemplates.joyful()
+        set.colors = ChartColorTemplates.material()
         
         let data = PieChartData(dataSet: set)
         pieChart.data = data
