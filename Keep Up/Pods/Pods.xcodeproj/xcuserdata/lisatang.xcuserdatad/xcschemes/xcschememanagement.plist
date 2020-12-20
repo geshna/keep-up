@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
+		<key>Charts.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,7 +27,7 @@
 		<key>FirebaseAuth.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>23</integer>
 		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
@@ -92,22 +97,22 @@
 		<key>abseil.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>17</integer>
 		</dict>
 		<key>gRPC-C++-gRPCCertificates-Cpp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>18</integer>
 		</dict>
 		<key>gRPC-C++.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>15</integer>
 		</dict>
 		<key>gRPC-Core.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>21</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
