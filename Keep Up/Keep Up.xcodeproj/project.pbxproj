@@ -150,13 +150,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		199CB45F258F08C6000B19A4 /* New Group */ = {
+		199CB45F258F08C6000B19A4 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
 				00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */,
+				00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */,
 				00EAC84B258E138400785B4A /* HabitViewController.swift */,
 			);
-			path = "New Group";
+			path = Habits;
 			sourceTree = "<group>";
 		};
 		A2ACBDAB48CAEEF72D8EFD31 /* Frameworks */ = {
@@ -196,9 +197,7 @@
 			children = (
 				F262DF49258D963300EEE05E /* Controllers */,
 				F262DF39258D682600EEE05E /* Helpers */,
-				F262DF2B258D606300EEE05E /* SigningUp */,
 				B4185963258D2C1E00CBFA16 /* GoogleService-Info.plist */,
-				00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */,
 				00EAC892258E81E700785B4A /* FillBubble.swift */,
 				D1F7300A258D086C00974903 /* AppDelegate.swift */,
 				D1F7300C258D086C00974903 /* SceneDelegate.swift */,
@@ -209,7 +208,6 @@
 				F2B7D57C258EC11F00FAFB6F /* TempViewController.swift */,
 				19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */,
 				197FC7F0258D5392004AAADA /* SummaryViewController.swift */,
-				199CB45F258F08C6000B19A4 /* New Group */,
 				B4AE1327258E4E8C00A0D7DE /* ComposeViewController.swift */,
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
@@ -269,6 +267,8 @@
 		F262DF49258D963300EEE05E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				199CB45F258F08C6000B19A4 /* Habits */,
+				F262DF2B258D606300EEE05E /* SigningUp */,
 				F241A405258F072B0088B731 /* Streaks */,
 				F29DEB3C258E8D6C00ED7620 /* Friends */,
 			);

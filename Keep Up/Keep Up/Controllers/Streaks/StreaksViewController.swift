@@ -31,6 +31,7 @@ class StreaksViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.init(red: 253/255, green: 247/255, blue: 231/255, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
         //updateStreaks()
