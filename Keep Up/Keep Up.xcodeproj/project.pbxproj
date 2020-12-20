@@ -11,6 +11,7 @@
 		00EAC87A258E2BC500785B4A /* DetailHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */; };
 		00EAC88B258E7B7D00785B4A /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */; };
 		00EAC893258E81E800785B4A /* FillBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC892258E81E700785B4A /* FillBubble.swift */; };
+		00EAC90A258EDF8700785B4A /* StreaksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EAC909258EDF8600785B4A /* StreaksViewController.swift */; };
 		197FC7F1258D5392004AAADA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197FC7F0258D5392004AAADA /* SummaryViewController.swift */; };
 		19D8AD57258EAA73002BB9DF /* TrendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */; };
 		857651621A33EFEE7987F101 /* Pods_Keep_Up_Keep_UpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CE8B6D6ADCA374AAAC5453 /* Pods_Keep_Up_Keep_UpUITests.framework */; };
@@ -62,6 +63,7 @@
 		00EAC879258E2BC500785B4A /* DetailHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHabitViewController.swift; sourceTree = "<group>"; };
 		00EAC88A258E7B7D00785B4A /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		00EAC892258E81E700785B4A /* FillBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillBubble.swift; sourceTree = "<group>"; };
+		00EAC909258EDF8600785B4A /* StreaksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreaksViewController.swift; sourceTree = "<group>"; };
 		197FC7F0258D5392004AAADA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		19D8AD56258EAA73002BB9DF /* TrendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsViewController.swift; sourceTree = "<group>"; };
 		1B6B50ECAA46F19FA868ACC3 /* Pods_Keep_UpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keep_UpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
 				D1F73018258D087100974903 /* Info.plist */,
+				00EAC909258EDF8600785B4A /* StreaksViewController.swift */,
 			);
 			path = "Keep Up";
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 			files = (
 				F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
+				00EAC90A258EDF8700785B4A /* StreaksViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,
 				F2B7D57D258EC11F00FAFB6F /* TempViewController.swift in Sources */,
