@@ -126,7 +126,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Fv-3mq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="Fsx-Ji-ff9">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -139,6 +139,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cZo-Fv-3mq" firstAttribute="top" secondItem="QV3-gE-Gjt" secondAttribute="top" id="Sb6-1a-MDK"/>
@@ -146,8 +147,6 @@
                             <constraint firstItem="QV3-gE-Gjt" firstAttribute="bottom" secondItem="cZo-Fv-3mq" secondAttribute="bottom" id="iYg-mf-jsW"/>
                             <constraint firstItem="QV3-gE-Gjt" firstAttribute="trailing" secondItem="cZo-Fv-3mq" secondAttribute="trailing" id="l6i-2A-ZOc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
-                        <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" image="person.3" catalog="system" id="qCt-U9-jsw"/>
                     <navigationItem key="navigationItem" title="Challenge Board" id="urF-yo-KnY">
@@ -163,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIV-Ya-dm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="-725"/>
+            <point key="canvasLocation" x="1171" y="-408"/>
         </scene>
         <!--Post Challenge View Controller-->
         <scene sceneID="i4v-MT-SPI">
@@ -192,13 +191,14 @@
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(Add challenge here!)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-S4-zrf">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zPy-oD-c55"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ovz-S4-zrf" secondAttribute="bottom" id="9hN-UM-v3x"/>
                             <constraint firstItem="5ax-wB-0M1" firstAttribute="top" secondItem="zPy-oD-c55" secondAttribute="top" id="jcs-LI-p9Q"/>
@@ -208,7 +208,6 @@
                             <constraint firstItem="5ax-wB-0M1" firstAttribute="leading" secondItem="zPy-oD-c55" secondAttribute="leading" id="poo-vj-mSe"/>
                             <constraint firstItem="ovz-S4-zrf" firstAttribute="leading" secondItem="zPy-oD-c55" secondAttribute="leading" id="u70-eT-Jtu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zPy-oD-c55"/>
                     </view>
                     <connections>
                         <outlet property="textViewChallenge" destination="ovz-S4-zrf" id="Ezl-bi-EJA"/>
@@ -216,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og5-vh-OdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067" y="-728"/>
+            <point key="canvasLocation" x="1926" y="-408"/>
         </scene>
         <!--Summary-->
         <scene sceneID="eOt-yH-qlL">
@@ -405,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbd-R9-Rlj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428.985507246377" y="-2768.3035714285711"/>
+            <point key="canvasLocation" x="2429" y="-3121"/>
         </scene>
         <!--Add a Habit-->
         <scene sceneID="Zrc-dP-odO">
@@ -579,7 +578,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyZ-aN-R2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="UVH-Or-4JH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3134.7826086956525" y="-2768.3035714285711"/>
+            <point key="canvasLocation" x="3119" y="-3121"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="0Kl-cZ-DYi">
@@ -641,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUV-5s-mPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3802.898550724638" y="-2768.3035714285711"/>
+            <point key="canvasLocation" x="3800" y="-3121"/>
         </scene>
         <!--Streaks-->
         <scene sceneID="s9K-uv-LJr">
@@ -689,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5r-YV-p6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2571" y="-1565"/>
+            <point key="canvasLocation" x="2429" y="-1785"/>
         </scene>
         <!--Trends-->
         <scene sceneID="Rkb-ql-lvq">
@@ -729,7 +728,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDs-tu-B7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3491.3043478260875" y="-2027.0089285714284"/>
+            <point key="canvasLocation" x="2429" y="-2441"/>
         </scene>
         <!--Friends Table View Controller-->
         <scene sceneID="er4-4S-tA7">
@@ -776,7 +775,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydn-EE-ZyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2570" y="-798"/>
+            <point key="canvasLocation" x="2429" y="-1125"/>
         </scene>
         <!--Add Friend View Controller-->
         <scene sceneID="Ce8-Tk-Ukr">
@@ -822,12 +821,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="kEh-Hs-v8u"/>
                         <color key="backgroundColor" red="0.99266964199999996" green="0.96782022710000004" blue="0.89886146779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e8R-cg-Vam" firstAttribute="top" secondItem="kEh-Hs-v8u" secondAttribute="top" constant="70" id="VBV-O0-CPD"/>
                             <constraint firstItem="e8R-cg-Vam" firstAttribute="centerX" secondItem="kEh-Hs-v8u" secondAttribute="centerX" id="nwS-ea-G8e"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kEh-Hs-v8u"/>
                     </view>
                     <navigationItem key="navigationItem" id="FDc-YZ-Ci6"/>
                     <connections>
@@ -838,7 +837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dX-ET-ebG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276.811594202899" y="-889.28571428571422"/>
+            <point key="canvasLocation" x="3145" y="-1125"/>
         </scene>
         <!--Temp View Controller-->
         <scene sceneID="BaY-EC-LIh">
@@ -847,8 +846,8 @@
                     <view key="view" contentMode="scaleToFill" id="xcT-tj-2V5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RFI-Ir-ilu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="EgV-kC-bX9"/>
                 </viewController>
@@ -986,7 +985,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VzL-9q-iKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2510.144927536232" y="-13.392857142857142"/>
+            <point key="canvasLocation" x="-2736" y="-1576"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="NdX-Xo-7HH">
@@ -1004,13 +1003,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4VK-9d-yYQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMD-QC-ip9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1678" y="336"/>
+            <point key="canvasLocation" x="-1845" y="-1199"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="BEn-zO-IQW">
@@ -1074,7 +1073,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiO-Jv-Rii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2510" y="-725"/>
+            <point key="canvasLocation" x="-2735" y="-883"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="wgO-IS-LCS">
@@ -1132,7 +1131,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjx-Fy-Mgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="-725"/>
+            <point key="canvasLocation" x="422" y="-408"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b4T-De-uzn">
