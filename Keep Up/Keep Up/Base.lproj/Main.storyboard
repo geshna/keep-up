@@ -298,7 +298,6 @@
                             <constraint firstAttribute="top" secondItem="uTA-T9-UJC" secondAttribute="top" id="DT0-ec-0rO"/>
                             <constraint firstAttribute="top" secondItem="uTA-T9-UJC" secondAttribute="top" id="Xtk-Nl-hfi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="V3r-Af-UyT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Habits" id="JWx-Ez-8td">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZH7-UL-L54">
@@ -477,7 +476,6 @@
                             <constraint firstItem="jVC-qf-t9n" firstAttribute="bottom" secondItem="2pn-c2-ajn" secondAttribute="bottom" constant="364" id="zSu-9j-JqZ"/>
                             <constraint firstItem="awf-Eo-CE4" firstAttribute="leading" secondItem="gv8-Vj-ZEf" secondAttribute="trailing" constant="33" id="zWy-MM-xLu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jVC-qf-t9n"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Habit" id="i2u-tp-AyV"/>
                     <connections>
@@ -622,7 +620,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NzD-Dy-hr8"/>
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="NzD-Dy-hr8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Trends" id="fs9-bo-af3" userLabel="Trends"/>
                 </viewController>
