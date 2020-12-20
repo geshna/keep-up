@@ -73,6 +73,11 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                     }
                     
                     
+                    
+                    if(temp_entries.isEmpty){
+                        entries.append(PieChartDataEntry(value: 1.0, label: "No Habits Logged Yet!"))
+                    }
+                    else{
                     for entry in temp_entries {
                         
                         print(entry)
@@ -80,13 +85,15 @@ class TrendsViewController: UIViewController, ChartViewDelegate {
                                                          label: entry))
                     }
                     
+                    }
+                    
+                    
                     let set = PieChartDataSet(entries: entries, label: "")
                     
                     set.colors = ChartColorTemplates.material()
                     
                     let data = PieChartData(dataSet: set)
                     self.pieChart.data = data
-                    
                 }
                 
                 
