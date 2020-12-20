@@ -9,14 +9,12 @@ import UIKit
 
 class DetailHabitViewController: UIViewController {
     @IBOutlet weak var habitNameTextField: UITextField!
-    @IBOutlet weak var habitDescTextField: UITextField!
     
  
 
     override func viewDidLoad() {
         super.viewDidLoad()
         habitNameTextField.delegate = self
-        habitDescTextField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -26,7 +24,6 @@ class DetailHabitViewController: UIViewController {
         //destVC.myDays.append("new dates")
         //destVC.myStreaks.append(5)
         destVC.myHabits.append("\(habitNameTextField.text!)")
-        destVC.myDays.append("\(habitDescTextField.text!)")
         destVC.myStreaks.append(5)
     }
 
