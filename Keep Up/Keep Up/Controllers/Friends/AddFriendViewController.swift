@@ -70,6 +70,7 @@ class AddFriendViewController: UIViewController {
                                 //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())
                             print("added friend")
                             self.db.collection("users").document(userEmail!).collection("friends").document(emailEntered).setData(document.data())
+                            self.db.collection("users").document(emailEntered).collection("friends").document(userEmail!).setData(["email":userEmail!,"uid":user?.uid, "displayName":user?.displayName])
                             //print("DOC ID MY VARIABLES: \(MyVariables.docId)")
                            }
                             //self.db.collection("users").document(MyVariables.docId).collection("friends").addDocument(data: document.data())

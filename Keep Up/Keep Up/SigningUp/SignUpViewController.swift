@@ -104,10 +104,21 @@ class SignUpViewController: UIViewController {
                     self.showError("Error creating user")
                 }else{
                     
+                    let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                    let displayName = firstName + " " + lastName
+                    changeRequest?.displayName = displayName
+                    changeRequest?.commitChanges { (error) in
+                        if error != nil {
+                            //show error message
+                            self.showError("Error setting display name")
+                        }
+                    }
+                    
+                    
                     //user was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
                     
-                    let docRef = db.collection("users").document(email).setData(["firstname":firstName, "lastname":lastName, "email": email, "password": password, "uid":result!.user.uid, "habits":[]]) { (error) in
+                    let docRef = db.collection("users").document(email).setData(["firstname":firstName, "lastname":lastName, "email": email, "password": password, "uid":result!.user.uid, "displayName":displayName ,"habits":[]]) { (error) in
                         if error != nil {
                             //show error message
                             self.showError("Error saving user data")
