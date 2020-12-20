@@ -6,13 +6,57 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ChallengeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var postData = ["Eat Apple","Walk Honey","Drink Water"]
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    var ref:DatabaseReference?
+    var databaseHandle:DatabaseHandle?
+    //var postData = ["Eat an Apple", "Take a walk", "Drink-Water"]
+    var postData = [String]()
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        //Set the firebase database reference
+        ref = Database.database().reference()
+        
+        //Retrieve the posts and listen for changes
+        databaseHandle = ref?.child("Posts").observe(.childAdded, with: { (snapshot) in
+            
+            //Code to execute when a child is added under "Posts"
+            //take the value from the snapshot and add it to the postData-array
+            
+            //Try to convert the value of the data to a string
+            let challenge_post = snapshot.value as? String
+            
+            if let actualPost = challenge_post {
+                
+                //Append the data to our postData array
+                self.postData.append(actualPost)
+
+                
+                //Reload the tableview
+                self.tableView.reloadData()
+            }
+            
+        })
+    }
+    //var postData = [String]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        
+        return postData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
@@ -24,17 +68,6 @@ class ChallengeViewController: UIViewController, UITableViewDelegate, UITableVie
             return cell!
     }
     
-
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
     
     
     

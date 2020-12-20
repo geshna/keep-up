@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9MG-sx-Vaf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9l-c3-fnt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="1355" y="-1406"/>
         </scene>
-        <!--Challenges-->
+        <!--Challenge Board-->
         <scene sceneID="HHQ-fS-vch">
             <objects>
                 <viewController id="mLP-aE-DnJ" customClass="ChallengeViewController" customModule="Keep_Up" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +35,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Fv-3mq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="Fsx-Ji-ff9">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fsx-Ji-ff9" id="5pV-y6-Y42">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99276965859999999" green="0.9700163007" blue="0.90752416849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="QV3-gE-Gjt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" image="person.3" catalog="system" id="qCt-U9-jsw"/>
-                    <navigationItem key="navigationItem" id="urF-yo-KnY">
+                    <navigationItem key="navigationItem" title="Challenge Board" id="urF-yo-KnY">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="bfY-Q0-xsI">
                             <connections>
                                 <segue destination="9MG-sx-Vaf" kind="presentation" id="8qO-Tj-cGC"/>
@@ -73,13 +83,21 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-wB-0M1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
-                                    <navigationItem title="Title" id="1AR-v7-r1r">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="cPf-lO-i8l"/>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rdt-Dg-mQJ"/>
+                                    <navigationItem title="Propose a Challenge" id="1AR-v7-r1r">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="cPf-lO-i8l">
+                                            <connections>
+                                                <action selector="cancelChallenge:" destination="9MG-sx-Vaf" id="YnY-wK-cIx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rdt-Dg-mQJ">
+                                            <connections>
+                                                <action selector="addChallenge:" destination="9MG-sx-Vaf" id="tbu-0S-Nss"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="testtest" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-S4-zrf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(Add challenge here!)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-S4-zrf">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -99,6 +117,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zPy-oD-c55"/>
                     </view>
+                    <connections>
+                        <outlet property="textViewChallenge" destination="ovz-S4-zrf" id="Ezl-bi-EJA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og5-vh-OdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

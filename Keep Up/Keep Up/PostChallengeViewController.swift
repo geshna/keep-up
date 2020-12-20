@@ -18,20 +18,14 @@ import FirebaseDatabase
 class PostChallengeViewController: UIViewController {
     
     
+    @IBOutlet weak var textViewChallenge: UITextView!
+    
+    var ref:DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         
-        let name = "olaaaa"
-        let age = 12
-        
-        var dict: [String: Any] = ["name": name, "age": age]
-        
-        let db = Firestore.firestore()
-        
-        //db.collection("newcollection").document("Olaf").collection("a_habit").addDocument(data:dict)
-        //db.collection("newcollection").addDocument(data:dict)
-        //db.collection("newcollection").document("Test").setData(dict)
-        db.collection("users").document("grant").collection("myHabits").document("xhabit").collection("xday").addDocument(data:dict)
     
         // Do any additional setup after loading the view.
     }
@@ -41,6 +35,18 @@ class PostChallengeViewController: UIViewController {
         //Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func addChallenge(_ sender: Any) {
+        //TO DO: Post the data to firebase
+        ref?.child("Posts").childByAutoId().setValue(textViewChallenge.text)
+        //Dismiss this popover
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func cancelChallenge(_ sender: Any) {
+        //Dismiss this popover
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     
     
