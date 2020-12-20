@@ -107,14 +107,81 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Streaks" image="paperplane" catalog="system" id="cc1-HS-ynq"/>
-                    <navigationItem key="navigationItem" id="dYf-L6-yeG"/>
+                    <navigationItem key="navigationItem" id="dYf-L6-yeG">
+                        <barButtonItem key="rightBarButtonItem" title="Add Streak" id="hKu-ja-xQy">
+                            <connections>
+                                <segue destination="GFQ-cf-g5e" kind="show" id="RPx-P5-Ezn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="35t-fB-run" id="CB2-4k-jdr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-n5-fPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353.6231884057972" y="-1406.25"/>
+            <point key="canvasLocation" x="632" y="-1416"/>
+        </scene>
+        <!--Add Streak View Controller-->
+        <scene sceneID="3u2-jH-qpM">
+            <objects>
+                <viewController id="GFQ-cf-g5e" customClass="AddStreakViewController" customModule="Keep_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rzu-nj-qGE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Streak!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-cg-e6i">
+                                <rect key="frame" x="90" y="165" width="235" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter habit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCp-0m-Q2p">
+                                <rect key="frame" x="124" y="297" width="166" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a friend's email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHo-N3-epv">
+                                <rect key="frame" x="124" y="395" width="166" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5d-zf-T37">
+                                <rect key="frame" x="146" y="512" width="123" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99436956639999996" green="0.82851970200000002" blue="0.45505934949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add Streak!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addStreakButtonPressed:" destination="GFQ-cf-g5e" eventType="touchUpInside" id="BwO-Tp-LOX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-VX-sdz">
+                                <rect key="frame" x="95" y="639" width="225" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rfz-Vp-PE4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a6u-df-Etc"/>
+                    <connections>
+                        <outlet property="addStreakButton" destination="X5d-zf-T37" id="ZRq-h6-wNJ"/>
+                        <outlet property="createdStreakLabel" destination="LpF-VX-sdz" id="9We-XO-hwc"/>
+                        <outlet property="emailTextField" destination="LHo-N3-epv" id="XMY-e8-8qH"/>
+                        <outlet property="habitTextField" destination="OCp-0m-Q2p" id="Apw-6B-xkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qht-jf-tJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398.5507246376812" y="-1416.2946428571429"/>
         </scene>
         <!--Challenge Board-->
         <scene sceneID="HHQ-fS-vch">
@@ -660,7 +727,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1n-Lz-WMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421.73913043478262" y="-1405.5803571428571"/>
+            <point key="canvasLocation" x="-142" y="-1416"/>
         </scene>
         <!--Awards-->
         <scene sceneID="Cv4-wj-hwh">
@@ -1094,7 +1161,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk5-xa-ZBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488.40579710144931" y="-1405.5803571428571"/>
+            <point key="canvasLocation" x="-993" y="-1415"/>
         </scene>
         <!--Summary-->
         <scene sceneID="Jhp-yN-pxR">

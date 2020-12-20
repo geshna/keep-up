@@ -33,6 +33,7 @@
 		D1F73022258D087200974903 /* Keep_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F73021258D087200974903 /* Keep_UpTests.swift */; };
 		D1F7302D258D087200974903 /* Keep_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7302C258D087200974903 /* Keep_UpUITests.swift */; };
 		E7E339DD2F805B357E988F8D /* Pods_Keep_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61557761B38D51755E360DE /* Pods_Keep_Up.framework */; };
+		F241A401258F07220088B731 /* AddStreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241A400258F07220088B731 /* AddStreakViewController.swift */; };
 		F262DF21258D600900EEE05E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF20258D600900EEE05E /* SignUpViewController.swift */; };
 		F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF25258D602600EEE05E /* LoginViewController.swift */; };
 		F262DF30258D67CB00EEE05E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262DF2F258D67CB00EEE05E /* Utilities.swift */; };
@@ -98,6 +99,7 @@
 		D1F73028258D087200974903 /* Keep UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Keep UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F7302C258D087200974903 /* Keep_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keep_UpUITests.swift; sourceTree = "<group>"; };
 		D1F7302E258D087200974903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F241A400258F07220088B731 /* AddStreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStreakViewController.swift; sourceTree = "<group>"; };
 		F262DF20258D600900EEE05E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F262DF25258D602600EEE05E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F262DF2F258D67CB00EEE05E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -207,8 +209,6 @@
 				D1F73013258D087100974903 /* Assets.xcassets */,
 				D1F73015258D087100974903 /* LaunchScreen.storyboard */,
 				D1F73018258D087100974903 /* Info.plist */,
-				00EAC909258EDF8600785B4A /* StreaksViewController.swift */,
-				00EAC90E258EE33C00785B4A /* StreaksTableViewCell.swift */,
 			);
 			path = "Keep Up";
 			sourceTree = "<group>";
@@ -229,6 +229,16 @@
 				D1F7302E258D087200974903 /* Info.plist */,
 			);
 			path = "Keep UpUITests";
+			sourceTree = "<group>";
+		};
+		F241A405258F072B0088B731 /* Streaks */ = {
+			isa = PBXGroup;
+			children = (
+				F241A400258F07220088B731 /* AddStreakViewController.swift */,
+				00EAC909258EDF8600785B4A /* StreaksViewController.swift */,
+				00EAC90E258EE33C00785B4A /* StreaksTableViewCell.swift */,
+			);
+			path = Streaks;
 			sourceTree = "<group>";
 		};
 		F262DF2B258D606300EEE05E /* SigningUp */ = {
@@ -254,6 +264,7 @@
 		F262DF49258D963300EEE05E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F241A405258F072B0088B731 /* Streaks */,
 				F29DEB3C258E8D6C00ED7620 /* Friends */,
 			);
 			path = Controllers;
@@ -511,6 +522,7 @@
 			files = (
 				F262DF53258D971000EEE05E /* AddFriendViewController.swift in Sources */,
 				F262DF26258D602600EEE05E /* LoginViewController.swift in Sources */,
+				F241A401258F07220088B731 /* AddStreakViewController.swift in Sources */,
 				00EAC90A258EDF8700785B4A /* StreaksViewController.swift in Sources */,
 				D1F7300F258D086C00974903 /* ViewController.swift in Sources */,
 				F262DF63258D9F2500EEE05E /* InitialViewController.swift in Sources */,

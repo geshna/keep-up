@@ -64,12 +64,9 @@ class AddFriendViewController: UIViewController {
                                 if let document = document, document.exists {
                                     print("friend already exists")
                                     i = 1
-                                    
-                                    
-                                    
+                                        
                                 }else{
                                     print("creating friend")
-                                    
                                 }
                             }
                             
@@ -88,19 +85,12 @@ class AddFriendViewController: UIViewController {
                     }
                 }
             
-            
-            
-            
         } else {
           // No user is signed in.
           // ...
             print("ERROR IN FINDING USER: NO USER IS SIGNED IN")
         }
-        
-        
-        
-        
-        
+
     }
     
     /*
