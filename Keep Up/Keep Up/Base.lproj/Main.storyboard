@@ -155,20 +155,23 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-12-KIe">
                                                     <rect key="frame" x="20" y="15" width="374" height="79"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Habit Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-Zt-nx2">
-                                                            <rect key="frame" x="8" y="8" width="127.5" height="33"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-Zt-nx2">
+                                                            <rect key="frame" x="8" y="8" width="228" height="33"/>
                                                             <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Days of Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-Oo-S36">
-                                                            <rect key="frame" x="8" y="49" width="91.5" height="23"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days of Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-Oo-S36">
+                                                            <rect key="frame" x="8" y="53.5" width="91.5" height="18.5"/>
                                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="My Streak: 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0b-mk-fRZ">
-                                                            <rect key="frame" x="272" y="30" width="94" height="18.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Streak: 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0b-mk-fRZ">
+                                                            <rect key="frame" x="258" y="30" width="108" height="19"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="108" id="1Q8-62-k1l"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -176,35 +179,25 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.9797027707" green="0.85262697939999998" blue="0.49499541520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="86t-Fy-yub"/>
-                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="8" id="9G4-MY-F6Y"/>
-                                                        <constraint firstAttribute="bottom" secondItem="X4m-Oo-S36" secondAttribute="bottom" constant="7" id="DP6-xA-DX3"/>
-                                                        <constraint firstItem="X4m-Oo-S36" firstAttribute="top" secondItem="dmJ-Zt-nx2" secondAttribute="bottom" constant="8" symbolic="YES" id="HLU-vX-JcB"/>
-                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="8" id="Qup-6F-bP3"/>
-                                                        <constraint firstItem="D0b-mk-fRZ" firstAttribute="leading" secondItem="dmJ-Zt-nx2" secondAttribute="trailing" constant="23" id="Ybf-db-GUr"/>
-                                                        <constraint firstItem="X4m-Oo-S36" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="ceT-tT-BRy"/>
-                                                        <constraint firstAttribute="bottom" secondItem="D0b-mk-fRZ" secondAttribute="bottom" constant="30.5" id="cgw-SM-378"/>
-                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="gQr-tv-J7p"/>
-                                                        <constraint firstAttribute="trailing" secondItem="D0b-mk-fRZ" secondAttribute="trailing" constant="8" id="kak-Fe-DUq"/>
-                                                        <constraint firstItem="D0b-mk-fRZ" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="30" id="lDG-Jj-otP"/>
-                                                        <constraint firstItem="X4m-Oo-S36" firstAttribute="top" secondItem="dmJ-Zt-nx2" secondAttribute="bottom" constant="8" symbolic="YES" id="r5L-gK-y2O"/>
+                                                        <constraint firstItem="D0b-mk-fRZ" firstAttribute="leading" secondItem="dmJ-Zt-nx2" secondAttribute="trailing" constant="22" id="20g-OC-yeU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="X4m-Oo-S36" secondAttribute="trailing" constant="274.5" id="6lm-6I-z4l"/>
+                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="LZp-el-gWi"/>
+                                                        <constraint firstAttribute="bottom" secondItem="X4m-Oo-S36" secondAttribute="bottom" constant="7" id="Sdv-Pg-eeX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="D0b-mk-fRZ" secondAttribute="trailing" constant="8" id="VMq-sK-NoQ"/>
+                                                        <constraint firstItem="D0b-mk-fRZ" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="30" id="eLz-Eu-42q"/>
+                                                        <constraint firstItem="X4m-Oo-S36" firstAttribute="top" secondItem="dmJ-Zt-nx2" secondAttribute="bottom" constant="12.5" id="ll1-1f-C5s"/>
+                                                        <constraint firstAttribute="bottom" secondItem="D0b-mk-fRZ" secondAttribute="bottom" constant="30" id="q8u-mo-MPS"/>
+                                                        <constraint firstItem="X4m-Oo-S36" firstAttribute="leading" secondItem="ml1-12-KIe" secondAttribute="leading" constant="8" id="shy-d9-IMY"/>
+                                                        <constraint firstItem="dmJ-Zt-nx2" firstAttribute="top" secondItem="ml1-12-KIe" secondAttribute="top" constant="8" id="uPX-5o-Ogk"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.99086648229999996" green="0.9730024934" blue="0.91495102640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="top" secondItem="nRH-k4-8xd" secondAttribute="topMargin" constant="4" id="2Z8-tp-4j4"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ml1-12-KIe" secondAttribute="bottom" constant="3" id="7kn-aH-wa1"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="trailing" secondItem="nRH-k4-8xd" secondAttribute="trailingMargin" id="8ZK-fK-FyT"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="trailing" secondItem="nRH-k4-8xd" secondAttribute="trailingMargin" id="EoO-pE-fe7"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="top" secondItem="nRH-k4-8xd" secondAttribute="topMargin" constant="4" id="GSz-XS-g3p"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="leading" secondItem="nRH-k4-8xd" secondAttribute="leadingMargin" id="HaE-sl-avy"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="trailing" secondItem="nRH-k4-8xd" secondAttribute="trailingMargin" id="Qon-gc-9Ez"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ml1-12-KIe" secondAttribute="bottom" constant="3" id="SJE-al-7eZ"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="leading" secondItem="nRH-k4-8xd" secondAttribute="leadingMargin" id="ofB-jf-65c"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="leading" secondItem="nRH-k4-8xd" secondAttribute="leadingMargin" id="ofn-zK-cHe"/>
-                                                <constraint firstItem="ml1-12-KIe" firstAttribute="top" secondItem="nRH-k4-8xd" secondAttribute="topMargin" constant="4" id="scu-gE-5vQ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ml1-12-KIe" secondAttribute="bottom" constant="3" id="vYi-Ie-gqf"/>
+                                                <constraint firstItem="ml1-12-KIe" firstAttribute="leading" secondItem="nRH-k4-8xd" secondAttribute="leadingMargin" id="IHf-xU-bOt"/>
+                                                <constraint firstItem="ml1-12-KIe" firstAttribute="top" secondItem="nRH-k4-8xd" secondAttribute="topMargin" constant="4" id="QdP-Vc-8Ix"/>
+                                                <constraint firstItem="ml1-12-KIe" firstAttribute="trailing" secondItem="nRH-k4-8xd" secondAttribute="trailingMargin" id="gcf-0V-16j"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ml1-12-KIe" secondAttribute="bottom" constant="3" id="ndi-xL-ab4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -222,7 +215,6 @@
                             <constraint firstAttribute="leading" secondItem="V3r-Af-UyT" secondAttribute="leading" id="1j6-bl-S6E"/>
                             <constraint firstAttribute="top" secondItem="uTA-T9-UJC" secondAttribute="top" id="DT0-ec-0rO"/>
                             <constraint firstAttribute="top" secondItem="uTA-T9-UJC" secondAttribute="top" id="Xtk-Nl-hfi"/>
-                            <constraint firstAttribute="top" secondItem="V3r-Af-UyT" secondAttribute="top" id="aau-Tj-mWS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Habits" id="JWx-Ez-8td">
