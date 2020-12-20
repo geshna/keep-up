@@ -8,9 +8,9 @@ Many college students agree that 2020 has been a difficult year to stay motivate
 ## What it does
 
 Key Features:
--Habit-Tracking: Each time they perform a habit, the user is able to log their progress and ‘KeepUp’ will display the trends/history of the habit.
--Streaks with Friends: “Snap Chat”-esque streaks! Users are able to start a healthy habit streak with a friend. Each day both friends perform a habit, the streak is updated to reflect the number of continuous days, encouraging users to keep up with their healthy habits!
--Challenge Forum: A forum page where users can propose healthy-habit challenges for their friends to accept.
+* Habit-Tracking: Each time they perform a habit, the user is able to log their progress and ‘KeepUp’ will display the trends/history of the habit.
+* Streaks with Friends: “Snap Chat”-esque streaks! Users are able to start a healthy habit streak with a friend. Each day both friends perform a habit, the streak is updated to reflect the number of continuous days, encouraging users to keep up with their healthy habits!
+* Challenge Forum: A forum page where users can propose healthy-habit challenges for their friends to accept.
 
 ## How we built it
 
@@ -25,15 +25,15 @@ One challenge that we ran into was having to deal with large merge conflicts wit
 We learned to use Firebase hosting and Cloud Functions to update data from our app in real time. We worked to set up documents/collections with Firestore in order to store data for each user to keep track of each habit, the length of time they have continued a habit, their friends list, their user authentication, and more.
 
 Building the backend:
--To log each user’s habits and friends, we created a series of documents and collections to store each user’s habits and the corresponding days at which the person performed that habit. We then retrieved the data to be displayed in a habit log on the “trends” page.
--To create the challenges board, we used the real-time database for users to easily post (to firebase) new “healthy habit challenges” they would like to pose to their friends as well as receive/accept (read from firebase) “healthy habit challenges” from other users.
+* To log each user’s habits and friends, we created a series of documents and collections to store each user’s habits and the corresponding days at which the person performed that habit. We then retrieved the data to be displayed in a habit log on the “trends” page.
+* To create the challenges board, we used the real-time database for users to easily post (to firebase) new “healthy habit challenges” they would like to pose to their friends as well as receive/accept (read from firebase) “healthy habit challenges” from other users.
 
 ## What we learned
 
 Our Key Takeaways Are...
--In app development, it is key to focus on building minimal key features before adding too many features!
--We learned how to read, store, and write data to Firebase!
--XCode storyboard conflicts are nasty!
+* In app development, it is key to focus on building minimal key features before adding too many features!
+* We learned how to read, store, and write data to Firebase!
+* XCode storyboard conflicts are nasty!
 
 ## What's next for Keep Up
 
